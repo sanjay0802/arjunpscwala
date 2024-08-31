@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Arjun PSCWala</string>
+    <string name="title_mobile">Mobile</string>
+    <string name="action_login_with_phone">Login with Mobile</string>
+    <string name="title_welcome_hint">Prepare for PSC with the people like you</string>
+    <string name="subtitle_login_mobile">Please enter your valid phone number. We will send you a 4-digit code to verify your account.</string>
+
+    <!-- Verify OTP-->
+    <string name="subtitle_verify_mobile">Type the verification code we’ve sent you</string>
+    <string name="action_continue">Continue</string>
+    <string name="hint_mobile_number">eg.0987654321</string>
+    <string name="action_back">Go Back</string>
+    <string name="action_send_again">Send again</string>
+
+    <!--Signup-->
+    <string name="title_signup">Signup</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_name">Full Name</string>
+    <string name="hint_city">City</string>
+    <string name="hint_course">Course</string>
+    <string name="hint_address">Address</string>
+    <string name="action_signup">Sign Up</string>
+    <string name="hint_mobile">Mobile Number</string>
+    <!--Profile-->
+    <string name="title_gender">Gender</string>
+    <string name="title_male">Male</string>
+    <string name="title_female">Female</string>
+    <string name="action_save">Save</string>
+    <string name="title_profile">Profile details</string>
+    <string name="action_skip">Skip</string>
+    <string name="retry">Retry</string>
+    <string name="count_down_seconds">00:%1$s   seconds</string>
+</resources>
