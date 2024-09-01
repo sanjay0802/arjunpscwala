@@ -26,7 +26,7 @@ phases:
     - unzip -d /opt gradle-7.6.1-bin.zip
     - export PATH=$PATH:/opt/gradle-7.6.1/bin
     runtime-versions:
-      java: corretto17
+      java: corretto11
   pre_build:
     commands:
     - echo "Building Spring Boot application..."
