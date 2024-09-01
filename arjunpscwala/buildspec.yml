@@ -1,0 +1,37 @@
+artifacts:
+  discard-paths: true
+  files:
+  - $CODEBUILD_SRC_DIR/build/libs/$DYNAMIC_ARTIFACT_NAME
+cache:
+  paths:
+  - ~/.gradle/caches
+  - ~/.gradle/wrapper
+eb_codebuild_settings:
+  CodeBuildServiceRole: kalorie_code_build_role
+  ComputeType: BUILD_GENERAL1_SMALL
+  Image: aws/codebuild/eb-java-8-amazonlinux-64:2.4.3
+  Timeout: 10
+env:
+  variables:
+    DYNAMIC_ARTIFACT_NAME: ''
+phases:
+  build:
+    commands:
+    - echo "Running tests..."
+    - ./gradlew test
+  install:
+    commands:
+    - echo "Setting up environment..."
+    - wget https://services.gradle.org/distributions/gradle-7.6.1-bin.zip
+    - unzip -d /opt gradle-7.6.1-bin.zip
+    - export PATH=$PATH:/opt/gradle-7.6.1/bin
+    runtime-versions:
+      java: corretto11
+  pre_build:
+    commands:
+    - echo "Building Spring Boot application..."
+    - cd $CODEBUILD_SRC_DIR
+    - chmod +x gradlew
+    - export DYNAMIC_ARTIFACT_NAME=$(./gradlew -q determineArtifactName)
+    - ./gradlew build
+version: 0.2

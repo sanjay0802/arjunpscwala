@@ -38,3 +38,15 @@ tasks.named('test') {
 	useJUnitPlatform()
 }
 
+task determineArtifactName {
+	doLast {
+		// You can put custom logic here to calculate the artifact name dynamically.
+		// For demonstration purposes, let's assume it's determined based on project properties.
+		def dynamicArtifactName = project.property('version')
+		def projectName = project.name
+		if (dynamicArtifactName == null) {
+			throw new GradleException("Custom artifact name not defined.")
+		}
+		println "$projectName-${dynamicArtifactName}.jar"
+	}
+}
