@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">489701682720</string>
+    <string name="google_api_key" translatable="false">AIzaSyAqNSDSCHpZfd6pXaecpN_M13Ei727QRWM</string>
+    <string name="google_app_id" translatable="false">1:489701682720:android:dcf41e1e53b314a2169645</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAqNSDSCHpZfd6pXaecpN_M13Ei727QRWM</string>
+    <string name="google_storage_bucket" translatable="false">arjun-psc-wala.appspot.com</string>
+    <string name="project_id" translatable="false">arjun-psc-wala</string>
+</resources>
