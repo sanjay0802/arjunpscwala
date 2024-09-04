@@ -21,7 +21,7 @@ public class User {
     private String name;
     private String gender;
     private String city;
-    private  String courses;
+    private  String course;
     private String address;
     private LocalDateTime createdAt;
     private String fbToken;
@@ -34,7 +34,7 @@ public class User {
                 ", name='" + name + '\'' +
                 ", gender='" + gender + '\'' +
                 ", city='" + city + '\'' +
-                ", courses='" + courses + '\'' +
+                ", courses='" + course + '\'' +
                 ", address='" + address + '\'' +
                 ", createdAt=" + createdAt +
                 ", ftoken='" + fbToken + '\'' +
