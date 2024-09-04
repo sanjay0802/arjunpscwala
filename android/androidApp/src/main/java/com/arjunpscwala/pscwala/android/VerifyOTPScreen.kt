@@ -1,5 +1,6 @@
 package com.arjunpscwala.pscwala.android
 
+import android.util.Log
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -20,6 +21,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.OutlinedTextFieldDefaults
 import androidx.compose.material3.Scaffold
+import androidx.compose.material3.SnackbarHostState
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
@@ -27,6 +29,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateListOf
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -34,6 +37,7 @@ import androidx.compose.ui.focus.FocusDirection
 import androidx.compose.ui.focus.focusProperties
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalFocusManager
+import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
@@ -46,6 +50,8 @@ import com.arjunpscwala.pscwala.android.theme.dp_128
 import com.arjunpscwala.pscwala.android.theme.dp_16
 import com.arjunpscwala.pscwala.android.theme.dp_32
 import com.arjunpscwala.pscwala.android.theme.dp_8
+import com.arjunpscwala.pscwala.android.ui.components.AppSnackbarHost
+import com.arjunpscwala.pscwala.android.ui.components.ShowError
 
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -57,10 +63,16 @@ fun VerifyOTPScreen(
         VerifyOTPViewModel()
     }
 ) {
-
+    val localKeyboardController = LocalSoftwareKeyboardController.current
     val verifyOTPUIState by verifyOTPViewModel.verifyOTPUIState.collectAsState()
+    val snackbarHostState by remember {
+        mutableStateOf(SnackbarHostState())
+    }
 
     Scaffold(
+        snackbarHost = {
+            AppSnackbarHost(hostState = snackbarHostState)
+        },
         topBar = {
             TopAppBar(title = { /*TODO*/ }, windowInsets = WindowInsets(
                 top = dp_16, left = dp_16
@@ -96,7 +108,8 @@ fun VerifyOTPScreen(
             Text(text = stringResource(id = R.string.subtitle_verify_mobile))
             Spacer(modifier = Modifier.height(dp_16))
             OTPField(onOTPEntered = {
-                onNewUser()
+                localKeyboardController?.hide()
+                verifyOTPViewModel.verifyUser()
             })
             Spacer(modifier = Modifier.height(dp_16))
             if (verifyOTPUIState.countdownFinished) {
@@ -110,13 +123,20 @@ fun VerifyOTPScreen(
         }
     }
 
+    ShowError(
+        snackbarHostState = snackbarHostState,
+        uiState = verifyOTPUIState,
+        errorMessages =
+        verifyOTPUIState.errorMessages
+    )
+
 }
 
 
 @Composable
 private fun OTPField(onOTPEntered: (otp: String) -> Unit) {
     var otp = remember {
-        mutableStateListOf("", "", "", "")
+        mutableStateListOf("", "", "", "", "", "")
     }
     val maxLength = 1
     val focusManager = LocalFocusManager.current

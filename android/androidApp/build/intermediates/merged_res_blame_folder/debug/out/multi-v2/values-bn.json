@@ -4,92 +4,7 @@
             "outputFile": "com.arjunpscwala.pscwala.android.androidApp-mergeDebugResources-62:/values-bn/values-bn.xml",
             "map": [
                 {
-                    "source": "/Users/pintu236/.gradle/caches/transforms-3/93f733abeb35b68b9cfa181433e64516/transformed/foundation-release/res/values-bn/values-bn.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,140",
-                        "endColumns": "84,84",
-                        "endOffsets": "135,220"
-                    },
-                    "to": {
-                        "startLines": "105,106",
-                        "startColumns": "4,4",
-                        "startOffsets": "11015,11100",
-                        "endColumns": "84,84",
-                        "endOffsets": "11095,11180"
-                    }
-                },
-                {
-                    "source": "/Users/pintu236/.gradle/caches/transforms-3/465d7aaefe6b0cd46d93920c09994ae9/transformed/browser-1.4.0/res/values-bn/values-bn.xml",
-                    "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,161,263,372",
-                        "endColumns": "105,101,108,105",
-                        "endOffsets": "156,258,367,473"
-                    },
-                    "to": {
-                        "startLines": "36,73,74,75",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "4002,8114,8216,8325",
-                        "endColumns": "105,101,108,105",
-                        "endOffsets": "4103,8211,8320,8426"
-                    }
-                },
-                {
-                    "source": "/Users/pintu236/.gradle/caches/transforms-3/d3f3f3f7dda5e81f7a2fb0cb73630a6b/transformed/play-services-base-18.0.1/res/values-bn/values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "193,298,453,577,684,816,934,1042,1142,1281,1386,1538,1662,1791,1935,1991,2054",
-                        "endColumns": "104,154,123,106,131,117,107,99,138,104,151,123,128,143,55,62,85",
-                        "endOffsets": "297,452,576,683,815,933,1041,1141,1280,1385,1537,1661,1790,1934,1990,2053,2139"
-                    },
-                    "to": {
-                        "startLines": "18,19,20,21,22,23,24,25,27,28,29,30,31,32,33,34,35",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "1835,1944,2103,2231,2342,2478,2600,2712,2968,3111,3220,3376,3504,3637,3785,3845,3912",
-                        "endColumns": "108,158,127,110,135,121,111,103,142,108,155,127,132,147,59,66,89",
-                        "endOffsets": "1939,2098,2226,2337,2473,2595,2707,2811,3106,3215,3371,3499,3632,3780,3840,3907,3997"
-                    }
-                },
-                {
-                    "source": "/Users/pintu236/.gradle/caches/transforms-3/6b81aef13b97cd4193f9ff382b0769de/transformed/credentials-1.2.0-rc01/res/values-bn/values-bn.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,169",
-                        "endColumns": "113,111",
-                        "endOffsets": "164,276"
-                    },
-                    "to": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "105,219",
-                        "endColumns": "113,111",
-                        "endOffsets": "214,326"
-                    }
-                },
-                {
-                    "source": "/Users/pintu236/.gradle/caches/transforms-3/f7f59b48003b1de2bb96dbf7c69caf58/transformed/core-1.13.1/res/values-bn/values-bn.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,154,256,358,461,562,664,784",
-                        "endColumns": "98,101,101,102,100,101,119,100",
-                        "endOffsets": "149,251,353,456,557,659,779,880"
-                    },
-                    "to": {
-                        "startLines": "8,9,10,11,12,13,14,88",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "843,942,1044,1146,1249,1350,1452,9436",
-                        "endColumns": "98,101,101,102,100,101,119,100",
-                        "endOffsets": "937,1039,1141,1244,1345,1447,1567,9532"
-                    }
-                },
-                {
-                    "source": "/Users/pintu236/.gradle/caches/transforms-3/67ff7bbac2b4566534da980521d4a78a/transformed/play-services-basement-18.4.0/res/values-bn/values.xml",
+                    "source": "/Users/pintu236/.gradle/caches/transforms-3/8b447d21efc58fa421894b52beaf506d/transformed/play-services-basement-18.4.0/res/values-bn/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -106,7 +21,58 @@
                     }
                 },
                 {
-                    "source": "/Users/pintu236/.gradle/caches/transforms-3/2ade4efae401017db3214ffa347e0592/transformed/material3-1.1.2/res/values-bn/values-bn.xml",
+                    "source": "/Users/pintu236/.gradle/caches/transforms-3/d379d7476e7e6c6f4a79031f11423eef/transformed/browser-1.4.0/res/values-bn/values-bn.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,161,263,372",
+                        "endColumns": "105,101,108,105",
+                        "endOffsets": "156,258,367,473"
+                    },
+                    "to": {
+                        "startLines": "36,73,74,75",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "4002,8114,8216,8325",
+                        "endColumns": "105,101,108,105",
+                        "endOffsets": "4103,8211,8320,8426"
+                    }
+                },
+                {
+                    "source": "/Users/pintu236/.gradle/caches/transforms-3/66b6eaf2f01254a858c52fcd361c6a97/transformed/foundation-release/res/values-bn/values-bn.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,140",
+                        "endColumns": "84,84",
+                        "endOffsets": "135,220"
+                    },
+                    "to": {
+                        "startLines": "105,106",
+                        "startColumns": "4,4",
+                        "startOffsets": "11015,11100",
+                        "endColumns": "84,84",
+                        "endOffsets": "11095,11180"
+                    }
+                },
+                {
+                    "source": "/Users/pintu236/.gradle/caches/transforms-3/493eeafbec0937294a6892138d9a94e2/transformed/play-services-base-18.0.1/res/values-bn/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "193,298,453,577,684,816,934,1042,1142,1281,1386,1538,1662,1791,1935,1991,2054",
+                        "endColumns": "104,154,123,106,131,117,107,99,138,104,151,123,128,143,55,62,85",
+                        "endOffsets": "297,452,576,683,815,933,1041,1141,1280,1385,1537,1661,1790,1934,1990,2053,2139"
+                    },
+                    "to": {
+                        "startLines": "18,19,20,21,22,23,24,25,27,28,29,30,31,32,33,34,35",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1835,1944,2103,2231,2342,2478,2600,2712,2968,3111,3220,3376,3504,3637,3785,3845,3912",
+                        "endColumns": "108,158,127,110,135,121,111,103,142,108,155,127,132,147,59,66,89",
+                        "endOffsets": "1939,2098,2226,2337,2473,2595,2707,2811,3106,3215,3371,3499,3632,3780,3840,3907,3997"
+                    }
+                },
+                {
+                    "source": "/Users/pintu236/.gradle/caches/transforms-3/edd81efc43ba4efe7dac0fba385af4f4/transformed/material3-1.1.2/res/values-bn/values-bn.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -123,7 +89,41 @@
                     }
                 },
                 {
-                    "source": "/Users/pintu236/.gradle/caches/transforms-3/6c05495e6e4cfba4210db00d29f0e51d/transformed/ui-release/res/values-bn/values-bn.xml",
+                    "source": "/Users/pintu236/.gradle/caches/transforms-3/90178f5cd3e9f69903a92607dfebda90/transformed/core-1.13.1/res/values-bn/values-bn.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,154,256,358,461,562,664,784",
+                        "endColumns": "98,101,101,102,100,101,119,100",
+                        "endOffsets": "149,251,353,456,557,659,779,880"
+                    },
+                    "to": {
+                        "startLines": "8,9,10,11,12,13,14,88",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "843,942,1044,1146,1249,1350,1452,9436",
+                        "endColumns": "98,101,101,102,100,101,119,100",
+                        "endOffsets": "937,1039,1141,1244,1345,1447,1567,9532"
+                    }
+                },
+                {
+                    "source": "/Users/pintu236/.gradle/caches/transforms-3/4695ca19acaa5dab51443dc058835629/transformed/credentials-1.2.0-rc01/res/values-bn/values-bn.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,169",
+                        "endColumns": "113,111",
+                        "endOffsets": "164,276"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "105,219",
+                        "endColumns": "113,111",
+                        "endOffsets": "214,326"
+                    }
+                },
+                {
+                    "source": "/Users/pintu236/.gradle/caches/transforms-3/96b5f4aceb33ab777b09d04f92fbffc3/transformed/ui-release/res/values-bn/values-bn.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

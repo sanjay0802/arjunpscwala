@@ -4,6 +4,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.arjunpscwala.pscwala.PhoneAuthInfo
 import com.arjunpscwala.pscwala.models.ErrorMessage
+import com.arjunpscwala.pscwala.models.state.UIState
 import com.arjunpscwala.pscwala.randomUUID
 import com.arjunpscwala.pscwala.repository.AuthRepository
 import com.arjunpscwala.pscwala.repository.AuthRepositoryImpl
@@ -67,11 +68,12 @@ class LoginViewModel : ViewModel() {
         _loginUIState.value = LoginUIState()
     }
 
+
 }
 
 data class LoginUIState(
     val isLoading: Boolean = false,
     val errorMessages: List<ErrorMessage> = emptyList(),
-    val phoneAuthInfo: PhoneAuthInfo? = null
-)
+    val phoneAuthInfo: PhoneAuthInfo? = null,
+) : UIState
 

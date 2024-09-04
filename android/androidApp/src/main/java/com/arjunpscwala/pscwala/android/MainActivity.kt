@@ -1,6 +1,7 @@
 package com.arjunpscwala.pscwala.android
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.runtime.Composable
@@ -36,6 +37,7 @@ class MainActivity : ComponentActivity() {
         = rememberNavController(), modifier: Modifier = Modifier
     ) {
 
+        Log.d("saurabhTAG", "Main Screen")
         NavHost(
             navController = navHostController,
             modifier = modifier,

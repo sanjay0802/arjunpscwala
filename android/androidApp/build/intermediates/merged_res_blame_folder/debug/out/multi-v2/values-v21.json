@@ -4,7 +4,7 @@
             "outputFile": "com.arjunpscwala.pscwala.android.androidApp-mergeDebugResources-62:/values-v21/values-v21.xml",
             "map": [
                 {
-                    "source": "/Users/pintu236/.gradle/caches/transforms-3/f7f59b48003b1de2bb96dbf7c69caf58/transformed/core-1.13.1/res/values-v21/values-v21.xml",
+                    "source": "/Users/pintu236/.gradle/caches/transforms-3/90178f5cd3e9f69903a92607dfebda90/transformed/core-1.13.1/res/values-v21/values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,13",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/pintu236/.gradle/caches/transforms-3/8a86d72e850cf4255862527cc5af7aec/transformed/credentials-play-services-auth-1.2.0-rc01/res/values-v21/values-v21.xml",
+                    "source": "/Users/pintu236/.gradle/caches/transforms-3/2dee61d60e34ab83a3df9d9ad8c7a7de/transformed/credentials-play-services-auth-1.2.0-rc01/res/values-v21/values-v21.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

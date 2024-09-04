@@ -1,5 +1,6 @@
 package com.arjunpscwala.pscwala.android.ui.screens
 
+import android.util.Log
 import androidx.compose.foundation.border
 import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.layout.Column
@@ -33,6 +34,7 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
@@ -50,7 +52,11 @@ import com.arjunpscwala.pscwala.android.theme.dp_128
 import com.arjunpscwala.pscwala.android.theme.dp_16
 import com.arjunpscwala.pscwala.android.theme.dp_32
 import com.arjunpscwala.pscwala.android.ui.components.AppSnackbarHost
+import com.arjunpscwala.pscwala.android.ui.components.ShowError
 import com.arjunpscwala.pscwala.login.LoginViewModel
+import com.arjunpscwala.pscwala.models.ErrorMessage
+import com.arjunpscwala.pscwala.models.state.UIState
+import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -66,17 +72,19 @@ fun LoginScreen(
     val snackbarHostState by remember {
         mutableStateOf(SnackbarHostState())
     }
+
     var mobileNumber by rememberSaveable {
         mutableStateOf("")
     }
     val loginUIState by loginViewModel.loginUIState.collectAsState()
 
-    DisposableEffect(loginUIState) {
-        if (loginUIState.phoneAuthInfo != null) {
+    LaunchedEffect(loginUIState.phoneAuthInfo) { // Use LaunchedEffect to trigger actions based on state
+        if(loginUIState.phoneAuthInfo!=null){
             onVerifyOTP(loginUIState.phoneAuthInfo)
-        } else if (loginUIState.errorMessages.isNotEmpty()) {
-
         }
+    }
+
+    DisposableEffect(Unit) {
         onDispose {
             loginViewModel.dispose()
         }
@@ -160,36 +168,12 @@ fun LoginScreen(
             }
         }
     }
-    // Process one error message at a time and show them as Snackbars in the UI
-    if (loginUIState.errorMessages.isNotEmpty()) {
 
-        // Remember the errorMessage to display on the screen
-        val errorMessage = remember(loginUIState) { loginUIState.errorMessages[0] }
-
-        // Get the text to show on the message from resources
-        val errorMessageText: String = errorMessage.message
-        val retryMessageText = stringResource(id = R.string.retry)
-
-
-        // If onRefreshPosts or onErrorDismiss change while the LaunchedEffect is running,
-        // don't restart the effect and use the latest lambda values.
-        // val onRefreshPostsState by rememberUpdatedState(onRefreshPosts)
-        //  val onErrorDismissState by rememberUpdatedState(onErrorDismiss)
-
-        // Effect running in a coroutine that displays the Snackbar on the screen
-        // If there's a change to errorMessageText, retryMessageText or snackbarHostState,
-        // the previous effect will be cancelled and a new one will start with the new values
-        LaunchedEffect(errorMessageText, retryMessageText, snackbarHostState) {
-            val snackbarResult = snackbarHostState.showSnackbar(
-                message = errorMessageText,
-                actionLabel = retryMessageText
-            )
-            if (snackbarResult == SnackbarResult.ActionPerformed) {
-
-            }
-            // Once the message is displayed and dismissed, notify the ViewModel
-            //           onErrorDismissState(errorMessage.id)
-        }
-    }
+    ShowError(
+        snackbarHostState = snackbarHostState,
+        uiState = loginUIState,
+        errorMessages = loginUIState.errorMessages
+    )
 
 }
+
