@@ -10,11 +10,11 @@
     <string name="action_skip">Skip</string>
     <string name="app_name">Arjun PSCWala</string>
     <string name="count_down_seconds">00:%1$s   seconds</string>
-    <string name="gcm_defaultSenderId" translatable="false">489701682720</string>
-    <string name="google_api_key" translatable="false">AIzaSyAqNSDSCHpZfd6pXaecpN_M13Ei727QRWM</string>
-    <string name="google_app_id" translatable="false">1:489701682720:android:dcf41e1e53b314a2169645</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAqNSDSCHpZfd6pXaecpN_M13Ei727QRWM</string>
-    <string name="google_storage_bucket" translatable="false">arjun-psc-wala.appspot.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">619001090940</string>
+    <string name="google_api_key" translatable="false">AIzaSyAVFu5tLPzQk7tdDXx0DLbhCRP5O5MgOaA</string>
+    <string name="google_app_id" translatable="false">1:619001090940:android:6f2265b3acd15357184af9</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAVFu5tLPzQk7tdDXx0DLbhCRP5O5MgOaA</string>
+    <string name="google_storage_bucket" translatable="false">arjunpscwala-78b05.appspot.com</string>
     <string name="hint_address">Address</string>
     <string name="hint_city">City</string>
     <string name="hint_course">Course</string>
@@ -22,7 +22,8 @@
     <string name="hint_mobile_number">eg.0987654321</string>
     <string name="hint_name">Full Name</string>
     <string name="hint_username">Username</string>
-    <string name="project_id" translatable="false">arjun-psc-wala</string>
+    <string name="label_loading">Loading...</string>
+    <string name="project_id" translatable="false">arjunpscwala-78b05</string>
     <string name="retry">Retry</string>
     <string name="subtitle_login_mobile">Please enter your valid phone number. We will send you a 4-digit code to verify your account.</string>
     <string name="subtitle_verify_mobile">Type the verification code we’ve sent you</string>

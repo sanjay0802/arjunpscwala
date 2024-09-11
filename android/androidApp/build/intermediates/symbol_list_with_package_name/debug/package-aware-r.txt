@@ -354,6 +354,7 @@ string hint_name
 string hint_username
 string in_progress
 string indeterminate
+string label_loading
 string m3c_bottom_sheet_pane_title
 string navigation_menu
 string not_selected

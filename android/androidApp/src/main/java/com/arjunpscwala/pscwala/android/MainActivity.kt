@@ -59,8 +59,16 @@ class MainActivity : ComponentActivity() {
 
             composable<Screen.VerifyOTP> {
                 VerifyOTPScreen(onNewUser = {
-
-                    navHostController.navigate(Screen.SignUp)
+                    lifecycleScope.launch {
+                        EventBus.emit(Event.NavigateEvent(it))
+                    }
+                    navHostController.navigate(Screen.SignUp) {
+                        popUpTo(0)
+                    }
+                }, onExistingUser = {
+                    navHostController.navigate(Screen.Home) {
+                        popUpTo(0)
+                    }
                 }, onNavigateUp = {
                     navHostController.navigateUp()
                 })

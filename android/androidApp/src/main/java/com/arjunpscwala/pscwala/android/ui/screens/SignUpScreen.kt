@@ -22,6 +22,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -30,30 +31,32 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.arjunpscwala.pscwala.android.R
-import com.arjunpscwala.pscwala.android.theme.colorPrimary
 import com.arjunpscwala.pscwala.android.theme.dp_1
-import com.arjunpscwala.pscwala.android.theme.dp_128
 import com.arjunpscwala.pscwala.android.theme.dp_16
 import com.arjunpscwala.pscwala.android.theme.dp_32
-import com.arjunpscwala.pscwala.android.theme.dp_8
+import com.arjunpscwala.pscwala.android.ui.screens.signup.SignUpViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun SignUpScreen(navigateToProfile: () -> Unit, onNavigateUp: () -> Unit) {
+fun SignUpScreen(
+    navigateToProfile: () -> Unit,
+    onNavigateUp: () -> Unit,
+    signupViewModel: SignUpViewModel = viewModel()
+) {
     var userName by remember {
         mutableStateOf("")
     }
-
-    var mobileNumber by remember {
-        mutableStateOf("")
-    }
-
     var name by remember {
         mutableStateOf("")
     }
+
+    val registerUIState by signupViewModel.registerUIState.collectAsState()
+
+
+
     Scaffold(topBar = {
         TopAppBar(title = { /*TODO*/ }, windowInsets = WindowInsets(
             top = dp_16, left = dp_16
@@ -121,9 +124,10 @@ fun SignUpScreen(navigateToProfile: () -> Unit, onNavigateUp: () -> Unit) {
             )
             Spacer(modifier = Modifier.height(dp_16))
             OutlinedTextField(
-                value = mobileNumber,
+                value = registerUIState.phoneNumber,
+                enabled = false,
                 onValueChange = {
-                    mobileNumber = it
+                    signupViewModel.onPhoneNumberChange(it)
                 },
                 label = {
                     Text(text = stringResource(id = R.string.hint_mobile))

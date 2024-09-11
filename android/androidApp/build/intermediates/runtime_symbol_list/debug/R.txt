@@ -353,6 +353,7 @@ int string hint_name 0x7f0a005e
 int string hint_username 0x7f0a005f
 int string in_progress 0x7f0a0060
 int string indeterminate 0x7f0a0061
+int string label_loading 0x7f0a008d
 int string m3c_bottom_sheet_pane_title 0x7f0a0062
 int string navigation_menu 0x7f0a0063
 int string not_selected 0x7f0a0064

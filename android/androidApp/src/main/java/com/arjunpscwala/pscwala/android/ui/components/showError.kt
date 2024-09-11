@@ -14,7 +14,9 @@ import com.arjunpscwala.pscwala.models.state.UIState
 fun ShowError(
     snackbarHostState: SnackbarHostState,
     uiState: UIState,
-    errorMessages: List<ErrorMessage>
+    errorMessages: List<ErrorMessage>, onMessageDismiss: (messageId: Long) -> Unit = {
+
+    }
 ) {
     // Process one error message at a time and show them as Snackbars in the UI
     if (errorMessages.isNotEmpty()) {
@@ -41,7 +43,7 @@ fun ShowError(
                 actionLabel = retryMessageText
             )
             if (snackbarResult == SnackbarResult.ActionPerformed) {
-
+                onMessageDismiss(errorMessage.id)
             }
             // Once the message is displayed and dismissed, notify the ViewModel
             //           onErrorDismissState(errorMessage.id)

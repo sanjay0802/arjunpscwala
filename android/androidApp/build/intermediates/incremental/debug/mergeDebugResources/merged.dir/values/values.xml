@@ -202,11 +202,11 @@
     <string name="fallback_menu_item_copy_link">Copy link</string>
     <string name="fallback_menu_item_open_in_browser">Open in browser</string>
     <string name="fallback_menu_item_share_link">Share link</string>
-    <string name="gcm_defaultSenderId" translatable="false">489701682720</string>
-    <string name="google_api_key" translatable="false">AIzaSyAqNSDSCHpZfd6pXaecpN_M13Ei727QRWM</string>
-    <string name="google_app_id" translatable="false">1:489701682720:android:dcf41e1e53b314a2169645</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAqNSDSCHpZfd6pXaecpN_M13Ei727QRWM</string>
-    <string name="google_storage_bucket" translatable="false">arjun-psc-wala.appspot.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">619001090940</string>
+    <string name="google_api_key" translatable="false">AIzaSyAVFu5tLPzQk7tdDXx0DLbhCRP5O5MgOaA</string>
+    <string name="google_app_id" translatable="false">1:619001090940:android:6f2265b3acd15357184af9</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAVFu5tLPzQk7tdDXx0DLbhCRP5O5MgOaA</string>
+    <string name="google_storage_bucket" translatable="false">arjunpscwala-78b05.appspot.com</string>
     <string name="hint_address">Address</string>
     <string name="hint_city">City</string>
     <string name="hint_course">Course</string>
@@ -216,10 +216,11 @@
     <string name="hint_username">Username</string>
     <string name="in_progress">In progress</string>
     <string name="indeterminate">Partially checked</string>
+    <string name="label_loading">Loading...</string>
     <string name="m3c_bottom_sheet_pane_title">Bottom Sheet</string>
     <string name="navigation_menu">"Navigation menu"</string>
     <string name="not_selected">Not selected</string>
-    <string name="project_id" translatable="false">arjun-psc-wala</string>
+    <string name="project_id" translatable="false">arjunpscwala-78b05</string>
     <string name="range_end">"Range end"</string>
     <string name="range_start">"Range start"</string>
     <string name="retry">Retry</string>
@@ -321,23 +322,14 @@
         <attr format="reference" name="fontProviderCerts"/>
         
         <attr name="fontProviderFetchStrategy">
-            <!-- The blocking font fetch works as follows.
-              First, check the local cache, then if the requested font is not cached, request the
-              font from the provider and wait until it is finished.  You can change the length of
-              the timeout by modifying fontProviderFetchTimeout.  If the timeout happens, the
-              default typeface will be used instead. -->
+            
             <enum name="blocking" value="0"/>
-            <!-- The async font fetch works as follows.
-              First, check the local cache, then if the requeted font is not cached, trigger a
-              request the font and continue with layout inflation. Once the font fetch succeeds, the
-              target text view will be refreshed with the downloaded font data. The
-              fontProviderFetchTimeout will be ignored if async loading is specified. -->
+            
             <enum name="async" value="1"/>
         </attr>
         
         <attr format="integer" name="fontProviderFetchTimeout">
-            <!-- A special value for the timeout. In this case, the blocking font fetching will not
-              timeout and wait until a reply is received from the font provider. -->
+            
             <enum name="forever" value="-1"/>
         </attr>
         

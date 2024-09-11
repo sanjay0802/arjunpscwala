@@ -3,23 +3,23 @@ package com.arjunpscwala.pscwala.android.ui.screens
 import kotlinx.serialization.Serializable
 
 @Serializable
-sealed class Screen {
+sealed class Screen(val route: String) {
     @Serializable
-    data object Welcome : Screen()
+    data object Welcome : Screen("")
 
     @Serializable
-    data object Login : Screen()
+    data object Login : Screen("")
 
     @Serializable
-    data object SignUp : Screen()
+    data object SignUp : Screen("signup")
 
     @Serializable
-    data object Profile : Screen()
+    data object Profile : Screen("")
 
     @Serializable
-    data object Home : Screen()
+    data object Home : Screen("")
 
     @Serializable
-    data object VerifyOTP : Screen()
+    data object VerifyOTP : Screen("")
 }
 

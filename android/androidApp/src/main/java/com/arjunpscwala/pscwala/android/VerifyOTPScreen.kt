@@ -1,6 +1,5 @@
 package com.arjunpscwala.pscwala.android
 
-import android.util.Log
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -26,6 +25,7 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateListOf
@@ -45,19 +45,22 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.arjunpscwala.pscwala.PhoneAuthInfoAndroid
 import com.arjunpscwala.pscwala.android.theme.dp_1
 import com.arjunpscwala.pscwala.android.theme.dp_128
 import com.arjunpscwala.pscwala.android.theme.dp_16
 import com.arjunpscwala.pscwala.android.theme.dp_32
 import com.arjunpscwala.pscwala.android.theme.dp_8
 import com.arjunpscwala.pscwala.android.ui.components.AppSnackbarHost
+import com.arjunpscwala.pscwala.android.ui.components.LoadingDialog
 import com.arjunpscwala.pscwala.android.ui.components.ShowError
 
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun VerifyOTPScreen(
-    onNewUser: () -> Unit,
+    onNewUser: (phoneAuthInfo: PhoneAuthInfoAndroid) -> Unit,
+    onExistingUser: () -> Unit,
     onNavigateUp: () -> Unit,
     verifyOTPViewModel: VerifyOTPViewModel = viewModel() {
         VerifyOTPViewModel()
@@ -67,6 +70,23 @@ fun VerifyOTPScreen(
     val verifyOTPUIState by verifyOTPViewModel.verifyOTPUIState.collectAsState()
     val snackbarHostState by remember {
         mutableStateOf(SnackbarHostState())
+    }
+
+    LaunchedEffect(verifyOTPUIState) {
+
+        if (verifyOTPUIState.navToRegister) {
+            onNewUser(
+                PhoneAuthInfoAndroid(
+                    verifyOTPUIState.verificationId,
+                    verifyOTPUIState.phoneNumber
+                )
+            )
+        } else if (verifyOTPUIState.navToLogin) {
+            onExistingUser()
+        }
+    }
+    LoadingDialog(showDialog = verifyOTPUIState.isLoading) {
+
     }
 
     Scaffold(
@@ -99,12 +119,15 @@ fun VerifyOTPScreen(
                 .padding(dp_32), horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Spacer(modifier = Modifier.height(dp_128))
-            Text(
-                text = stringResource(
-                    id = R.string.count_down_seconds, verifyOTPUIState.countdownText
-                ),
-                style = MaterialTheme.typography.headlineLarge.copy(fontWeight = FontWeight.Bold)
-            )
+            if (!verifyOTPUIState.countdownFinished) {
+                Text(
+                    text = stringResource(
+                        id = R.string.count_down_seconds, verifyOTPUIState.countdownText
+                    ),
+                    style = MaterialTheme.typography.headlineLarge.copy(fontWeight = FontWeight.Bold)
+                )
+            }
+
             Text(text = stringResource(id = R.string.subtitle_verify_mobile))
             Spacer(modifier = Modifier.height(dp_16))
             OTPField(onOTPEntered = {
@@ -114,7 +137,7 @@ fun VerifyOTPScreen(
             Spacer(modifier = Modifier.height(dp_16))
             if (verifyOTPUIState.countdownFinished) {
                 TextButton(onClick = {
-
+                    verifyOTPViewModel.sendOTP()
                 }) {
                     Text(text = stringResource(id = R.string.action_send_again))
                 }
@@ -135,7 +158,7 @@ fun VerifyOTPScreen(
 
 @Composable
 private fun OTPField(onOTPEntered: (otp: String) -> Unit) {
-    var otp = remember {
+    val otp = remember {
         mutableStateListOf("", "", "", "", "", "")
     }
     val maxLength = 1
@@ -147,21 +170,25 @@ private fun OTPField(onOTPEntered: (otp: String) -> Unit) {
                 value = otp[i],
 
                 onValueChange = {
-//                    if (it.length > maxLength) {
+                    try {
+                        //                    if (it.length > maxLength) {
 //                        focusManager.moveFocus(FocusDirection.Next)
 //                        return@OutlinedTextField
 //                    }
-                    if (it.isBlank() && i != 0) {
-                        focusManager.moveFocus(FocusDirection.Previous)
-                    }
-                    if (it.isNotBlank() && it.length == maxLength) {
-                        focusManager.moveFocus(FocusDirection.Next)
-                    }
-                    otp[i] = it.take(maxLength)
-                    if (otp.all { it.isNotBlank() }) {
-                        onOTPEntered(otp.joinToString(""))
-                    }
+                        if (it.isBlank() && i != 0) {
+                            focusManager.moveFocus(FocusDirection.Previous)
+                        }
+                        if (it.isNotBlank() && it.length == maxLength && i < otp.size) {
+                            focusManager.moveFocus(FocusDirection.Next)
+                        }
+                        otp[i] = it.take(maxLength)
+                        if (otp.all { it.isNotBlank() }) {
+                            onOTPEntered(otp.joinToString(""))
+                        }
 
+                    } catch (e: Exception) {
+
+                    }
                 },
                 colors = OutlinedTextFieldDefaults.colors(
                     cursorColor = Color.Transparent,

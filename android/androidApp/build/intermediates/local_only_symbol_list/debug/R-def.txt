@@ -26,6 +26,7 @@ string hint_mobile
 string hint_mobile_number
 string hint_name
 string hint_username
+string label_loading
 string project_id
 string retry
 string subtitle_login_mobile

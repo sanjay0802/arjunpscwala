@@ -23,7 +23,9 @@ class LoginViewModel : ViewModel() {
     val loginUIState = _loginUIState.asStateFlow()
 
     fun sendOTP(mobileNumber: String) {
-
+        if (mobileNumber.length < 10) {
+            return
+        }
         viewModelScope.launch {
             try {
                 _loginUIState.update {
@@ -66,6 +68,15 @@ class LoginViewModel : ViewModel() {
 
     fun dispose() {
         _loginUIState.value = LoginUIState()
+    }
+
+    fun retryLogin(mobileNumber: String, errorMessageId: Long) {
+        _loginUIState.update {
+            val errorMessages =
+                it.errorMessages.filterNot { errorMessage -> errorMessage.id == errorMessageId }
+            it.copy(errorMessages = errorMessages)
+        }
+        sendOTP(mobileNumber)
     }
 
 

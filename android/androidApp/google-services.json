@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "489701682720",
-    "project_id": "arjun-psc-wala",
-    "storage_bucket": "arjun-psc-wala.appspot.com"
+    "project_number": "619001090940",
+    "project_id": "arjunpscwala-78b05",
+    "storage_bucket": "arjunpscwala-78b05.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:489701682720:android:dcf41e1e53b314a2169645",
+        "mobilesdk_app_id": "1:619001090940:android:6f2265b3acd15357184af9",
         "android_client_info": {
           "package_name": "com.arjunpscwala.pscwala.android"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAqNSDSCHpZfd6pXaecpN_M13Ei727QRWM"
+          "current_key": "AIzaSyAVFu5tLPzQk7tdDXx0DLbhCRP5O5MgOaA"
         }
       ],
       "services": {
