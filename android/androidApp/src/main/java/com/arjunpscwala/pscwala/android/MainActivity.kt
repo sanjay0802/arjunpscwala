@@ -15,8 +15,9 @@ import com.arjunpscwala.pscwala.android.ui.screens.HomeScreen
 import com.arjunpscwala.pscwala.android.ui.screens.LoginScreen
 import com.arjunpscwala.pscwala.android.ui.screens.ProfileScreen
 import com.arjunpscwala.pscwala.android.ui.screens.Screen
-import com.arjunpscwala.pscwala.android.ui.screens.SignUpScreen
+import com.arjunpscwala.pscwala.android.ui.screens.signup.SignUpScreen
 import com.arjunpscwala.pscwala.android.ui.screens.WelcomeScreen
+import com.arjunpscwala.pscwala.android.ui.screens.verify.VerifyOTPScreen
 import com.arjunpscwala.pscwala.utils.Event
 import com.arjunpscwala.pscwala.utils.EventBus
 import kotlinx.coroutines.launch

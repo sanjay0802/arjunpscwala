@@ -52,7 +52,7 @@ import com.arjunpscwala.pscwala.android.theme.dp_32
 import com.arjunpscwala.pscwala.android.ui.components.AppSnackbarHost
 import com.arjunpscwala.pscwala.android.ui.components.LoadingDialog
 import com.arjunpscwala.pscwala.android.ui.components.ShowError
-import com.arjunpscwala.pscwala.login.LoginViewModel
+import com.arjunpscwala.pscwala.feature.login.LoginViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

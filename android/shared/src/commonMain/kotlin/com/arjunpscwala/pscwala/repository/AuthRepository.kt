@@ -5,8 +5,10 @@ import com.arjunpscwala.pscwala.PhoneAuthInfo
 import com.arjunpscwala.pscwala.getAuthService
 import com.arjunpscwala.pscwala.models.LoginInfo
 import com.arjunpscwala.pscwala.models.StandardResponse
+import com.arjunpscwala.pscwala.models.request.SignUpRequest
 import com.arjunpscwala.pscwala.models.request.VerifyOTPRequest
 import com.arjunpscwala.pscwala.network.NetworkClient
+import com.arjunpscwala.pscwala.network.registerUser
 import com.arjunpscwala.pscwala.network.verifyOTP
 import com.arjunpscwala.pscwala.utils.kFbToken
 import com.arjunpscwala.pscwala.utils.kMobileNo
@@ -23,6 +25,10 @@ interface AuthRepository {
     suspend fun verifyUser(
         mobileNumber: String,
         verificationId: String
+    ): StandardResponse<LoginInfo>
+
+    suspend fun signupUser(
+        signUpRequest: SignUpRequest
     ): StandardResponse<LoginInfo>
 }
 
@@ -45,6 +51,13 @@ class AuthRepositoryImpl : AuthRepository {
             setBody(VerifyOTPRequest(mobileNumber, verificationId))
         }.body()
 
+    }
+
+    override suspend fun signupUser(signUpRequest: SignUpRequest): StandardResponse<LoginInfo> {
+        return NetworkClient.httpClient.post(registerUser) {
+            contentType(ContentType.Application.Json)
+            setBody(signUpRequest)
+        }.body()
     }
 
 

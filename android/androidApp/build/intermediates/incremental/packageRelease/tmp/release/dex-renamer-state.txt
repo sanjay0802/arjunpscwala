@@ -1,0 +1,10 @@
+#Wed Sep 11 23:49:14 IST 2024
+base.0=/Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/build/intermediates/dex/release/mergeDexRelease/classes.dex
+base.1=/Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/build/intermediates/dex/release/mergeDexRelease/classes2.dex
+base.2=/Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/build/intermediates/dex/release/mergeDexRelease/classes3.dex
+path.0=classes.dex
+path.1=classes2.dex
+path.2=classes3.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex
+renamed.2=classes3.dex

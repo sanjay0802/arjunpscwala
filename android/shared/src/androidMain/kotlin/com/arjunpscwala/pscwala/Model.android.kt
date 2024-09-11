@@ -5,7 +5,7 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class PhoneAuthInfoAndroid(val verificationId: String = "", val phone: String = "") :
-    PhoneAuthInfo()
+    PhoneAuthInfo(verificationId, phone)
 
 
 actual fun phoneAuthInfo(verificationId: String, phone: String): PhoneAuthInfo =

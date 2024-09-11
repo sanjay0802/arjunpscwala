@@ -1,0 +1,808 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/src/main/AndroidManifest.xml:2:1-25:12
+MERGED from [:shared] /Users/pintu236/StudioProjects/arjunpscwala/android/shared/build/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material3:material3:1.1.2] /Users/pintu236/.gradle/caches/transforms-3/edd81efc43ba4efe7dac0fba385af4f4/transformed/material3-1.1.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common:2.8.0-beta07] /Users/pintu236/.gradle/caches/transforms-3/94f6c943be91bdba2027ef5e7494baf9/transformed/navigation-common-2.8.0-beta07/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime:2.8.0-beta07] /Users/pintu236/.gradle/caches/transforms-3/e48c07c126c3fd48b4fdcf804d1f9392/transformed/navigation-runtime-2.8.0-beta07/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.8.0-beta07] /Users/pintu236/.gradle/caches/transforms-3/413ebbab876241117e7deed04a073e3a/transformed/navigation-common-ktx-2.8.0-beta07/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.8.0-beta07] /Users/pintu236/.gradle/caches/transforms-3/994689c931532714e0ddad5488a839a6/transformed/navigation-runtime-ktx-2.8.0-beta07/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-compose:2.8.0-beta07] /Users/pintu236/.gradle/caches/transforms-3/1a4b82686fe822612fac07f98bdbbc40/transformed/navigation-compose-2.8.0-beta07/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:firebase-auth-ktx:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/0b79703160f13f205485e66c2fcbe5c8/transformed/firebase-auth-ktx-23.0.0/AndroidManifest.xml:2:1-17:12
+MERGED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:17:1-75:12
+MERGED from [com.google.firebase:firebase-analytics-ktx:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/a49950b50adecea44e2beaae99217370/transformed/firebase-analytics-ktx-22.0.2/AndroidManifest.xml:2:1-17:12
+MERGED from [com.google.firebase:firebase-analytics:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/14faeb32526380938f0421d48dda04d9/transformed/firebase-analytics-22.0.2/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/85dcf6d31296fd9b80af4e7b90235254/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:17:1-43:12
+MERGED from [com.google.firebase:firebase-installations:18.0.0] /Users/pintu236/.gradle/caches/transforms-3/4786d61ee83456c8f35d18f67d7a5c0c/transformed/firebase-installations-18.0.0/AndroidManifest.xml:2:1-24:12
+MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/pintu236/.gradle/caches/transforms-3/11b7079974aeaa17b399a538f6be3084/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:2:1-18:12
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/pintu236/.gradle/caches/transforms-3/7dfa2cd71c4fb95582d9f0dd3aa82853/transformed/firebase-auth-interop-20.0.0/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-common:21.0.0] /Users/pintu236/.gradle/caches/transforms-3/b446036f81601df82ba4085676259dee/transformed/firebase-common-21.0.0/AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.android.gms:play-services-measurement:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a9491e9752bee1296489ed408a9e7a/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:17:1-46:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/03a92e8b218f6de35f1655f5f0539ebf/transformed/play-services-measurement-sdk-22.0.2/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.credentials:credentials:1.2.0-rc01] /Users/pintu236/.gradle/caches/transforms-3/4695ca19acaa5dab51443dc058835629/transformed/credentials-1.2.0-rc01/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/pintu236/.gradle/caches/transforms-3/2dee61d60e34ab83a3df9d9ad8c7a7de/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:17:1-44:12
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] /Users/pintu236/.gradle/caches/transforms-3/fdffe7607247d36fe099641f5b60853f/transformed/play-services-auth-20.7.0/AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] /Users/pintu236/.gradle/caches/transforms-3/2310db76f70ba0477c884f9a4346543a/transformed/play-services-auth-api-phone-18.0.2/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] /Users/pintu236/.gradle/caches/transforms-3/bdeebac8acc717f338574acffd92d9cc/transformed/recaptcha-18.4.0/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.play:integrity:1.2.0] /Users/pintu236/.gradle/caches/transforms-3/894eb85750477061326efe2d5638a877/transformed/integrity-1.2.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-measurement-impl:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/845501a4571d14d3a307e68baa50cc13/transformed/play-services-measurement-impl-22.0.2/AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] /Users/pintu236/.gradle/caches/transforms-3/7a49140db646825276d9a179a914939d/transformed/play-services-ads-identifier-18.0.0/AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a027a98d54ab24e2aa49af90495b97/transformed/play-services-measurement-sdk-api-22.0.2/AndroidManifest.xml:17:1-30:12
+MERGED from [com.google.android.gms:play-services-measurement-base:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/6f69dc47eacacecf50286acfecc3bd1f/transformed/play-services-measurement-base-22.0.2/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] /Users/pintu236/.gradle/caches/transforms-3/2f3d9d379fc9f710b050789dc97038e8/transformed/play-services-stats-17.0.2/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] /Users/pintu236/.gradle/caches/transforms-3/ea6472f91353c7c2fecd3c711753bd66/transformed/firebase-appcheck-interop-17.0.0/AndroidManifest.xml:15:1-25:12
+MERGED from [androidx.compose.material:material-ripple:1.4.1] /Users/pintu236/.gradle/caches/transforms-3/fa4f0f7a162c0e5873a012a101f8b35a/transformed/material-ripple-1.4.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.material:material-icons-core:1.4.1] /Users/pintu236/.gradle/caches/transforms-3/0ec6740c08e741231546aa3794852fb3/transformed/material-icons-core-1.4.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-geometry-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/7c9c1209516c8e62a39bfb61feb15007/transformed/ui-geometry-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/e550c3720ca282d6a534ec8b2f6ca7e4/transformed/ui-tooling-preview-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-text-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/66f7e953255fef4ca164d387ae90844d/transformed/ui-text-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-core-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/bddde7a00ba7e952634ec2edddbf33b6/transformed/animation-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-graphics-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/a389af3539f82c57c1c2892b5af61089/transformed/ui-graphics-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-util-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/4a1ad5c2b51b2d6e6649f2ebd429a38b/transformed/ui-util-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-unit-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/dcb4709feead0a7ca49c485ac48c2a2b/transformed/ui-unit-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/pintu236/.gradle/caches/transforms-3/f94fafee5209d3b3b04bb9a876e64a5b/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/pintu236/.gradle/caches/transforms-3/dbad316f89f8caad2b7a2e6654e4ccf6/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/pintu236/.gradle/caches/transforms-3/ea02642b595b21678a6a883e5baab5be/transformed/emoji2-1.3.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/pintu236/.gradle/caches/transforms-3/a2da7b8577034f77c42a9b6b0f81eae8/transformed/autofill-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.browser:browser:1.4.0] /Users/pintu236/.gradle/caches/transforms-3/d379d7476e7e6c6f4a79031f11423eef/transformed/browser-1.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/pintu236/.gradle/caches/transforms-3/4d3b0bd0f3120581dffd370904db2e92/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-fido:20.1.0] /Users/pintu236/.gradle/caches/transforms-3/56b3468e2acb8d8d1531b3bd23aa5111/transformed/play-services-fido-20.1.0/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] /Users/pintu236/.gradle/caches/transforms-3/65d8bf70ddda2e18cffe0146ab7554c0/transformed/play-services-auth-base-18.0.4/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/pintu236/.gradle/caches/transforms-3/493eeafbec0937294a6892138d9a94e2/transformed/play-services-base-18.0.1/AndroidManifest.xml:16:1-24:12
+MERGED from [androidx.graphics:graphics-path:1.0.1] /Users/pintu236/.gradle/caches/transforms-3/7d32af7e5533e454f99f901ce5c1293a/transformed/graphics-path-1.0.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/pintu236/.gradle/caches/transforms-3/bab54da4119b8e65fda7482c73c6f891/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/pintu236/.gradle/caches/transforms-3/c0c33d2a402b0781ef8bf2d139895ef6/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.privacysandbox.ads:ads-adservices-java:1.0.0-beta05] /Users/pintu236/.gradle/caches/transforms-3/af159a94cc1a133cd7c6c6eb32db662e/transformed/ads-adservices-java-1.0.0-beta05/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /Users/pintu236/.gradle/caches/transforms-3/e1f08e705d1f289d1e8538a974521821/transformed/ads-adservices-1.0.0-beta05/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.core:core-ktx:1.13.1] /Users/pintu236/.gradle/caches/transforms-3/f95dc5d7ef8c719d7fd3f73012bf0fa6/transformed/core-ktx-1.13.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.core:core:1.13.1] /Users/pintu236/.gradle/caches/transforms-3/90178f5cd3e9f69903a92607dfebda90/transformed/core-1.13.1/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/pintu236/.gradle/caches/transforms-3/1b1fde90206bc504d9b6246085d5d430/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/pintu236/.gradle/caches/transforms-3/4ae73c47be410f07d52a6a11e2a54b68/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/24541552f82836165c9cec4906419256/transformed/lifecycle-livedata-core-ktx-2.8.3/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/7c279af4b810d27def1308444fe173af/transformed/lifecycle-livedata-core-2.8.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/6d74019c8528bfcef54a08c8d08efbf2/transformed/lifecycle-viewmodel-2.8.3/AndroidManifest.xml:2:1-5:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/6d68b75d02af90f2120c6fb35d46d484/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/d99734cac7726adcb50f8d5af1e8f5cb/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/a06b0506c98179d139d01ca991db9d07/transformed/lifecycle-runtime-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/ac1365184cf7ef956ce31f54cb7f3c95/transformed/lifecycle-process-2.8.3/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/68457c19401ee5c1a771a91e47b3a55c/transformed/lifecycle-livedata-2.8.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/ae3a907d674be10d90863880c8093d4f/transformed/lifecycle-viewmodel-savedstate-2.8.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/844d6ba3db1120fd14b7269c8d33df21/transformed/lifecycle-viewmodel-ktx-2.8.3/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/593c14ea91b5dc4dbefaaf03c0622895/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/1cce901dc4aa5ce9931f8dbeb37a763c/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/96b5f4aceb33ab777b09d04f92fbffc3/transformed/ui-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/66b6eaf2f01254a858c52fcd361c6a97/transformed/foundation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/1d202f1e4d1e45babc40b11a53df9c38/transformed/animation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/618c9713db07d6f503ee7391dc4b63d2/transformed/foundation-layout-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/cbf13c8f20134fd91f7fadab30824aac/transformed/runtime-saveable-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/0516e20861dc5bb4561999b7755f62f3/transformed/runtime-release/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:firebase-installations-interop:17.1.1] /Users/pintu236/.gradle/caches/transforms-3/417edeb8d65cb445419a56e8fa7dc5c8/transformed/firebase-installations-interop-17.1.1/AndroidManifest.xml:15:1-19:12
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/pintu236/.gradle/caches/transforms-3/e051fb4d3bd5d0425ac8b308ce3429f4/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/pintu236/.gradle/caches/transforms-3/6a0bbaada3c18bbacaa696163a29baf9/transformed/firebase-measurement-connector-19.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] /Users/pintu236/.gradle/caches/transforms-3/8b447d21efc58fa421894b52beaf506d/transformed/play-services-basement-18.4.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/pintu236/.gradle/caches/transforms-3/158fcb453bece38f09b72dc21be88967/transformed/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.8.0] /Users/pintu236/.gradle/caches/transforms-3/fc63ca71dcf12ae43d8221ba97d23581/transformed/activity-1.8.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity-ktx:1.8.0] /Users/pintu236/.gradle/caches/transforms-3/03aaf704503d041310b0f3091f67eace/transformed/activity-ktx-1.8.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity-compose:1.8.0] /Users/pintu236/.gradle/caches/transforms-3/fd56d0a370667578cc61866081e12b5a/transformed/activity-compose-1.8.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.0] /Users/pintu236/.gradle/caches/transforms-3/4a831428ac7d729647aca4aad8d5ddb7/transformed/googleid-1.1.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /Users/pintu236/.gradle/caches/transforms-3/3aefaa7a021243be7ad94831147e4640/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/pintu236/.gradle/caches/transforms-3/6d91e5c29ba8f4abfbc39d3fd67e0b6c/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.firebase:firebase-components:18.0.0] /Users/pintu236/.gradle/caches/transforms-3/b8cdbf1b531ce862951bc3975c136b7a/transformed/firebase-components-18.0.0/AndroidManifest.xml:15:1-20:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pintu236/.gradle/caches/transforms-3/19b5218a02fa013db661e0fd03f06408/transformed/profileinstaller-1.3.1/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/pintu236/.gradle/caches/transforms-3/f838c4693b7c883b36e80c505544b7f6/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/pintu236/.gradle/caches/transforms-3/7749ff3127a0a0adaef9c13b7b0bd602/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/pintu236/.gradle/caches/transforms-3/23565aa8e77469a738c78b6077b74fe8/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/pintu236/.gradle/caches/transforms-3/782a7f66db3aa396b356b9a37319b60b/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/pintu236/.gradle/caches/transforms-3/b2f73de9f0a2d1333ef337afe2c9e6e3/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/pintu236/.gradle/caches/transforms-3/67f687b617a08d496b63a76a39e11ec2/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/pintu236/.gradle/caches/transforms-3/e979b14e45919f57c51e8081b1fd67d9/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+	package
+		INJECTED from /Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/src/main/AndroidManifest.xml:4:5-67
+MERGED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:25:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/85dcf6d31296fd9b80af4e7b90235254/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/85dcf6d31296fd9b80af4e7b90235254/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-installations:18.0.0] /Users/pintu236/.gradle/caches/transforms-3/4786d61ee83456c8f35d18f67d7a5c0c/transformed/firebase-installations-18.0.0/AndroidManifest.xml:8:5-67
+MERGED from [com.google.firebase:firebase-installations:18.0.0] /Users/pintu236/.gradle/caches/transforms-3/4786d61ee83456c8f35d18f67d7a5c0c/transformed/firebase-installations-18.0.0/AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.gms:play-services-measurement:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a9491e9752bee1296489ed408a9e7a/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a9491e9752bee1296489ed408a9e7a/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] /Users/pintu236/.gradle/caches/transforms-3/bdeebac8acc717f338574acffd92d9cc/transformed/recaptcha-18.4.0/AndroidManifest.xml:7:5-67
+MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] /Users/pintu236/.gradle/caches/transforms-3/bdeebac8acc717f338574acffd92d9cc/transformed/recaptcha-18.4.0/AndroidManifest.xml:7:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/845501a4571d14d3a307e68baa50cc13/transformed/play-services-measurement-impl-22.0.2/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/845501a4571d14d3a307e68baa50cc13/transformed/play-services-measurement-impl-22.0.2/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a027a98d54ab24e2aa49af90495b97/transformed/play-services-measurement-sdk-api-22.0.2/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a027a98d54ab24e2aa49af90495b97/transformed/play-services-measurement-sdk-api-22.0.2/AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from /Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/src/main/AndroidManifest.xml:4:22-64
+application
+ADDED from /Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/src/main/AndroidManifest.xml:7:5-24:19
+INJECTED from /Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/src/main/AndroidManifest.xml:7:5-24:19
+MERGED from [com.google.firebase:firebase-auth-ktx:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/0b79703160f13f205485e66c2fcbe5c8/transformed/firebase-auth-ktx-23.0.0/AndroidManifest.xml:7:5-15:19
+MERGED from [com.google.firebase:firebase-auth-ktx:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/0b79703160f13f205485e66c2fcbe5c8/transformed/firebase-auth-ktx-23.0.0/AndroidManifest.xml:7:5-15:19
+MERGED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:28:5-73:19
+MERGED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:28:5-73:19
+MERGED from [com.google.firebase:firebase-analytics-ktx:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/a49950b50adecea44e2beaae99217370/transformed/firebase-analytics-ktx-22.0.2/AndroidManifest.xml:7:5-15:19
+MERGED from [com.google.firebase:firebase-analytics-ktx:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/a49950b50adecea44e2beaae99217370/transformed/firebase-analytics-ktx-22.0.2/AndroidManifest.xml:7:5-15:19
+MERGED from [com.google.firebase:firebase-analytics:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/14faeb32526380938f0421d48dda04d9/transformed/firebase-analytics-22.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/14faeb32526380938f0421d48dda04d9/transformed/firebase-analytics-22.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/85dcf6d31296fd9b80af4e7b90235254/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:29:5-41:19
+MERGED from [com.google.android.gms:play-services-measurement-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/85dcf6d31296fd9b80af4e7b90235254/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:29:5-41:19
+MERGED from [com.google.firebase:firebase-installations:18.0.0] /Users/pintu236/.gradle/caches/transforms-3/4786d61ee83456c8f35d18f67d7a5c0c/transformed/firebase-installations-18.0.0/AndroidManifest.xml:11:5-22:19
+MERGED from [com.google.firebase:firebase-installations:18.0.0] /Users/pintu236/.gradle/caches/transforms-3/4786d61ee83456c8f35d18f67d7a5c0c/transformed/firebase-installations-18.0.0/AndroidManifest.xml:11:5-22:19
+MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/pintu236/.gradle/caches/transforms-3/11b7079974aeaa17b399a538f6be3084/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/pintu236/.gradle/caches/transforms-3/11b7079974aeaa17b399a538f6be3084/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/pintu236/.gradle/caches/transforms-3/7dfa2cd71c4fb95582d9f0dd3aa82853/transformed/firebase-auth-interop-20.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/pintu236/.gradle/caches/transforms-3/7dfa2cd71c4fb95582d9f0dd3aa82853/transformed/firebase-auth-interop-20.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-common:21.0.0] /Users/pintu236/.gradle/caches/transforms-3/b446036f81601df82ba4085676259dee/transformed/firebase-common-21.0.0/AndroidManifest.xml:22:5-39:19
+MERGED from [com.google.firebase:firebase-common:21.0.0] /Users/pintu236/.gradle/caches/transforms-3/b446036f81601df82ba4085676259dee/transformed/firebase-common-21.0.0/AndroidManifest.xml:22:5-39:19
+MERGED from [com.google.android.gms:play-services-measurement:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a9491e9752bee1296489ed408a9e7a/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a9491e9752bee1296489ed408a9e7a/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/03a92e8b218f6de35f1655f5f0539ebf/transformed/play-services-measurement-sdk-22.0.2/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/03a92e8b218f6de35f1655f5f0539ebf/transformed/play-services-measurement-sdk-22.0.2/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/pintu236/.gradle/caches/transforms-3/2dee61d60e34ab83a3df9d9ad8c7a7de/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:23:5-42:19
+MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/pintu236/.gradle/caches/transforms-3/2dee61d60e34ab83a3df9d9ad8c7a7de/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:23:5-42:19
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] /Users/pintu236/.gradle/caches/transforms-3/fdffe7607247d36fe099641f5b60853f/transformed/play-services-auth-20.7.0/AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] /Users/pintu236/.gradle/caches/transforms-3/fdffe7607247d36fe099641f5b60853f/transformed/play-services-auth-20.7.0/AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.play:integrity:1.2.0] /Users/pintu236/.gradle/caches/transforms-3/894eb85750477061326efe2d5638a877/transformed/integrity-1.2.0/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.play:integrity:1.2.0] /Users/pintu236/.gradle/caches/transforms-3/894eb85750477061326efe2d5638a877/transformed/integrity-1.2.0/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/845501a4571d14d3a307e68baa50cc13/transformed/play-services-measurement-impl-22.0.2/AndroidManifest.xml:29:5-30:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/845501a4571d14d3a307e68baa50cc13/transformed/play-services-measurement-impl-22.0.2/AndroidManifest.xml:29:5-30:19
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] /Users/pintu236/.gradle/caches/transforms-3/7a49140db646825276d9a179a914939d/transformed/play-services-ads-identifier-18.0.0/AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] /Users/pintu236/.gradle/caches/transforms-3/7a49140db646825276d9a179a914939d/transformed/play-services-ads-identifier-18.0.0/AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/6f69dc47eacacecf50286acfecc3bd1f/transformed/play-services-measurement-base-22.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/6f69dc47eacacecf50286acfecc3bd1f/transformed/play-services-measurement-base-22.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] /Users/pintu236/.gradle/caches/transforms-3/2f3d9d379fc9f710b050789dc97038e8/transformed/play-services-stats-17.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] /Users/pintu236/.gradle/caches/transforms-3/2f3d9d379fc9f710b050789dc97038e8/transformed/play-services-stats-17.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] /Users/pintu236/.gradle/caches/transforms-3/ea6472f91353c7c2fecd3c711753bd66/transformed/firebase-appcheck-interop-17.0.0/AndroidManifest.xml:23:5-20
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] /Users/pintu236/.gradle/caches/transforms-3/ea6472f91353c7c2fecd3c711753bd66/transformed/firebase-appcheck-interop-17.0.0/AndroidManifest.xml:23:5-20
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/pintu236/.gradle/caches/transforms-3/ea02642b595b21678a6a883e5baab5be/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/pintu236/.gradle/caches/transforms-3/ea02642b595b21678a6a883e5baab5be/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [com.google.android.gms:play-services-fido:20.1.0] /Users/pintu236/.gradle/caches/transforms-3/56b3468e2acb8d8d1531b3bd23aa5111/transformed/play-services-fido-20.1.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-fido:20.1.0] /Users/pintu236/.gradle/caches/transforms-3/56b3468e2acb8d8d1531b3bd23aa5111/transformed/play-services-fido-20.1.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/pintu236/.gradle/caches/transforms-3/493eeafbec0937294a6892138d9a94e2/transformed/play-services-base-18.0.1/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/pintu236/.gradle/caches/transforms-3/493eeafbec0937294a6892138d9a94e2/transformed/play-services-base-18.0.1/AndroidManifest.xml:19:5-23:19
+MERGED from [androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /Users/pintu236/.gradle/caches/transforms-3/e1f08e705d1f289d1e8538a974521821/transformed/ads-adservices-1.0.0-beta05/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /Users/pintu236/.gradle/caches/transforms-3/e1f08e705d1f289d1e8538a974521821/transformed/ads-adservices-1.0.0-beta05/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.13.1] /Users/pintu236/.gradle/caches/transforms-3/90178f5cd3e9f69903a92607dfebda90/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.13.1] /Users/pintu236/.gradle/caches/transforms-3/90178f5cd3e9f69903a92607dfebda90/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/ac1365184cf7ef956ce31f54cb7f3c95/transformed/lifecycle-process-2.8.3/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/ac1365184cf7ef956ce31f54cb7f3c95/transformed/lifecycle-process-2.8.3/AndroidManifest.xml:23:5-33:19
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/pintu236/.gradle/caches/transforms-3/e051fb4d3bd5d0425ac8b308ce3429f4/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:4:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/pintu236/.gradle/caches/transforms-3/e051fb4d3bd5d0425ac8b308ce3429f4/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:4:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/pintu236/.gradle/caches/transforms-3/6a0bbaada3c18bbacaa696163a29baf9/transformed/firebase-measurement-connector-19.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/pintu236/.gradle/caches/transforms-3/6a0bbaada3c18bbacaa696163a29baf9/transformed/firebase-measurement-connector-19.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] /Users/pintu236/.gradle/caches/transforms-3/8b447d21efc58fa421894b52beaf506d/transformed/play-services-basement-18.4.0/AndroidManifest.xml:5:5-7:19
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] /Users/pintu236/.gradle/caches/transforms-3/8b447d21efc58fa421894b52beaf506d/transformed/play-services-basement-18.4.0/AndroidManifest.xml:5:5-7:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/pintu236/.gradle/caches/transforms-3/6d91e5c29ba8f4abfbc39d3fd67e0b6c/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/pintu236/.gradle/caches/transforms-3/6d91e5c29ba8f4abfbc39d3fd67e0b6c/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pintu236/.gradle/caches/transforms-3/19b5218a02fa013db661e0fd03f06408/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pintu236/.gradle/caches/transforms-3/19b5218a02fa013db661e0fd03f06408/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/pintu236/.gradle/caches/transforms-3/f838c4693b7c883b36e80c505544b7f6/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/pintu236/.gradle/caches/transforms-3/f838c4693b7c883b36e80c505544b7f6/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+	android:extractNativeLibs
+		INJECTED from /Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/src/main/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.13.1] /Users/pintu236/.gradle/caches/transforms-3/90178f5cd3e9f69903a92607dfebda90/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from /Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/src/main/AndroidManifest.xml:13:9-35
+	android:label
+		ADDED from /Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/src/main/AndroidManifest.xml:11:9-41
+	android:roundIcon
+		ADDED from /Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/src/main/AndroidManifest.xml:12:9-54
+	android:icon
+		ADDED from /Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/src/main/AndroidManifest.xml:10:9-43
+	android:allowBackup
+		ADDED from /Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/src/main/AndroidManifest.xml:9:9-36
+	android:theme
+		ADDED from /Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/src/main/AndroidManifest.xml:14:9-40
+	android:usesCleartextTraffic
+		ADDED from /Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/src/main/AndroidManifest.xml:15:9-44
+	android:name
+		ADDED from /Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/src/main/AndroidManifest.xml:8:9-48
+activity#com.arjunpscwala.pscwala.android.MainActivity
+ADDED from /Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/src/main/AndroidManifest.xml:16:9-23:20
+	android:exported
+		ADDED from /Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/src/main/AndroidManifest.xml:18:13-36
+	android:name
+		ADDED from /Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/src/main/AndroidManifest.xml:17:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/src/main/AndroidManifest.xml:19:13-22:29
+action#android.intent.action.MAIN
+ADDED from /Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/src/main/AndroidManifest.xml:20:17-69
+	android:name
+		ADDED from /Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/src/main/AndroidManifest.xml:20:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/src/main/AndroidManifest.xml:21:17-77
+	android:name
+		ADDED from /Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/src/main/AndroidManifest.xml:21:27-74
+uses-sdk
+INJECTED from /Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/src/main/AndroidManifest.xml
+INJECTED from /Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/src/main/AndroidManifest.xml
+MERGED from [:shared] /Users/pintu236/StudioProjects/arjunpscwala/android/shared/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-44
+MERGED from [:shared] /Users/pintu236/StudioProjects/arjunpscwala/android/shared/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material3:material3:1.1.2] /Users/pintu236/.gradle/caches/transforms-3/edd81efc43ba4efe7dac0fba385af4f4/transformed/material3-1.1.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material3:material3:1.1.2] /Users/pintu236/.gradle/caches/transforms-3/edd81efc43ba4efe7dac0fba385af4f4/transformed/material3-1.1.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.8.0-beta07] /Users/pintu236/.gradle/caches/transforms-3/94f6c943be91bdba2027ef5e7494baf9/transformed/navigation-common-2.8.0-beta07/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.8.0-beta07] /Users/pintu236/.gradle/caches/transforms-3/94f6c943be91bdba2027ef5e7494baf9/transformed/navigation-common-2.8.0-beta07/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.8.0-beta07] /Users/pintu236/.gradle/caches/transforms-3/e48c07c126c3fd48b4fdcf804d1f9392/transformed/navigation-runtime-2.8.0-beta07/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.8.0-beta07] /Users/pintu236/.gradle/caches/transforms-3/e48c07c126c3fd48b4fdcf804d1f9392/transformed/navigation-runtime-2.8.0-beta07/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.8.0-beta07] /Users/pintu236/.gradle/caches/transforms-3/413ebbab876241117e7deed04a073e3a/transformed/navigation-common-ktx-2.8.0-beta07/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.8.0-beta07] /Users/pintu236/.gradle/caches/transforms-3/413ebbab876241117e7deed04a073e3a/transformed/navigation-common-ktx-2.8.0-beta07/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.8.0-beta07] /Users/pintu236/.gradle/caches/transforms-3/994689c931532714e0ddad5488a839a6/transformed/navigation-runtime-ktx-2.8.0-beta07/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.8.0-beta07] /Users/pintu236/.gradle/caches/transforms-3/994689c931532714e0ddad5488a839a6/transformed/navigation-runtime-ktx-2.8.0-beta07/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.8.0-beta07] /Users/pintu236/.gradle/caches/transforms-3/1a4b82686fe822612fac07f98bdbbc40/transformed/navigation-compose-2.8.0-beta07/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.8.0-beta07] /Users/pintu236/.gradle/caches/transforms-3/1a4b82686fe822612fac07f98bdbbc40/transformed/navigation-compose-2.8.0-beta07/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-ktx:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/0b79703160f13f205485e66c2fcbe5c8/transformed/firebase-auth-ktx-23.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-ktx:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/0b79703160f13f205485e66c2fcbe5c8/transformed/firebase-auth-ktx-23.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:21:5-23:151
+MERGED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:21:5-23:151
+MERGED from [com.google.firebase:firebase-analytics-ktx:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/a49950b50adecea44e2beaae99217370/transformed/firebase-analytics-ktx-22.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics-ktx:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/a49950b50adecea44e2beaae99217370/transformed/firebase-analytics-ktx-22.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/14faeb32526380938f0421d48dda04d9/transformed/firebase-analytics-22.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/14faeb32526380938f0421d48dda04d9/transformed/firebase-analytics-22.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/85dcf6d31296fd9b80af4e7b90235254/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/85dcf6d31296fd9b80af4e7b90235254/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-installations:18.0.0] /Users/pintu236/.gradle/caches/transforms-3/4786d61ee83456c8f35d18f67d7a5c0c/transformed/firebase-installations-18.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-installations:18.0.0] /Users/pintu236/.gradle/caches/transforms-3/4786d61ee83456c8f35d18f67d7a5c0c/transformed/firebase-installations-18.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/pintu236/.gradle/caches/transforms-3/11b7079974aeaa17b399a538f6be3084/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/pintu236/.gradle/caches/transforms-3/11b7079974aeaa17b399a538f6be3084/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/pintu236/.gradle/caches/transforms-3/7dfa2cd71c4fb95582d9f0dd3aa82853/transformed/firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/pintu236/.gradle/caches/transforms-3/7dfa2cd71c4fb95582d9f0dd3aa82853/transformed/firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common:21.0.0] /Users/pintu236/.gradle/caches/transforms-3/b446036f81601df82ba4085676259dee/transformed/firebase-common-21.0.0/AndroidManifest.xml:19:5-44
+MERGED from [com.google.firebase:firebase-common:21.0.0] /Users/pintu236/.gradle/caches/transforms-3/b446036f81601df82ba4085676259dee/transformed/firebase-common-21.0.0/AndroidManifest.xml:19:5-44
+MERGED from [com.google.android.gms:play-services-measurement:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a9491e9752bee1296489ed408a9e7a/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a9491e9752bee1296489ed408a9e7a/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/03a92e8b218f6de35f1655f5f0539ebf/transformed/play-services-measurement-sdk-22.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/03a92e8b218f6de35f1655f5f0539ebf/transformed/play-services-measurement-sdk-22.0.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.credentials:credentials:1.2.0-rc01] /Users/pintu236/.gradle/caches/transforms-3/4695ca19acaa5dab51443dc058835629/transformed/credentials-1.2.0-rc01/AndroidManifest.xml:5:5-44
+MERGED from [androidx.credentials:credentials:1.2.0-rc01] /Users/pintu236/.gradle/caches/transforms-3/4695ca19acaa5dab51443dc058835629/transformed/credentials-1.2.0-rc01/AndroidManifest.xml:5:5-44
+MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/pintu236/.gradle/caches/transforms-3/2dee61d60e34ab83a3df9d9ad8c7a7de/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:21:5-44
+MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/pintu236/.gradle/caches/transforms-3/2dee61d60e34ab83a3df9d9ad8c7a7de/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:21:5-44
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] /Users/pintu236/.gradle/caches/transforms-3/fdffe7607247d36fe099641f5b60853f/transformed/play-services-auth-20.7.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] /Users/pintu236/.gradle/caches/transforms-3/fdffe7607247d36fe099641f5b60853f/transformed/play-services-auth-20.7.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] /Users/pintu236/.gradle/caches/transforms-3/2310db76f70ba0477c884f9a4346543a/transformed/play-services-auth-api-phone-18.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] /Users/pintu236/.gradle/caches/transforms-3/2310db76f70ba0477c884f9a4346543a/transformed/play-services-auth-api-phone-18.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] /Users/pintu236/.gradle/caches/transforms-3/bdeebac8acc717f338574acffd92d9cc/transformed/recaptcha-18.4.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] /Users/pintu236/.gradle/caches/transforms-3/bdeebac8acc717f338574acffd92d9cc/transformed/recaptcha-18.4.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.play:integrity:1.2.0] /Users/pintu236/.gradle/caches/transforms-3/894eb85750477061326efe2d5638a877/transformed/integrity-1.2.0/AndroidManifest.xml:4:5-44
+MERGED from [com.google.android.play:integrity:1.2.0] /Users/pintu236/.gradle/caches/transforms-3/894eb85750477061326efe2d5638a877/transformed/integrity-1.2.0/AndroidManifest.xml:4:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/845501a4571d14d3a307e68baa50cc13/transformed/play-services-measurement-impl-22.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/845501a4571d14d3a307e68baa50cc13/transformed/play-services-measurement-impl-22.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] /Users/pintu236/.gradle/caches/transforms-3/7a49140db646825276d9a179a914939d/transformed/play-services-ads-identifier-18.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] /Users/pintu236/.gradle/caches/transforms-3/7a49140db646825276d9a179a914939d/transformed/play-services-ads-identifier-18.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a027a98d54ab24e2aa49af90495b97/transformed/play-services-measurement-sdk-api-22.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a027a98d54ab24e2aa49af90495b97/transformed/play-services-measurement-sdk-api-22.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/6f69dc47eacacecf50286acfecc3bd1f/transformed/play-services-measurement-base-22.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/6f69dc47eacacecf50286acfecc3bd1f/transformed/play-services-measurement-base-22.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] /Users/pintu236/.gradle/caches/transforms-3/2f3d9d379fc9f710b050789dc97038e8/transformed/play-services-stats-17.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] /Users/pintu236/.gradle/caches/transforms-3/2f3d9d379fc9f710b050789dc97038e8/transformed/play-services-stats-17.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] /Users/pintu236/.gradle/caches/transforms-3/ea6472f91353c7c2fecd3c711753bd66/transformed/firebase-appcheck-interop-17.0.0/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] /Users/pintu236/.gradle/caches/transforms-3/ea6472f91353c7c2fecd3c711753bd66/transformed/firebase-appcheck-interop-17.0.0/AndroidManifest.xml:18:5-20:41
+MERGED from [androidx.compose.material:material-ripple:1.4.1] /Users/pintu236/.gradle/caches/transforms-3/fa4f0f7a162c0e5873a012a101f8b35a/transformed/material-ripple-1.4.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-ripple:1.4.1] /Users/pintu236/.gradle/caches/transforms-3/fa4f0f7a162c0e5873a012a101f8b35a/transformed/material-ripple-1.4.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-icons-core:1.4.1] /Users/pintu236/.gradle/caches/transforms-3/0ec6740c08e741231546aa3794852fb3/transformed/material-icons-core-1.4.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-icons-core:1.4.1] /Users/pintu236/.gradle/caches/transforms-3/0ec6740c08e741231546aa3794852fb3/transformed/material-icons-core-1.4.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/7c9c1209516c8e62a39bfb61feb15007/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/7c9c1209516c8e62a39bfb61feb15007/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/e550c3720ca282d6a534ec8b2f6ca7e4/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/e550c3720ca282d6a534ec8b2f6ca7e4/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/66f7e953255fef4ca164d387ae90844d/transformed/ui-text-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/66f7e953255fef4ca164d387ae90844d/transformed/ui-text-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/bddde7a00ba7e952634ec2edddbf33b6/transformed/animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/bddde7a00ba7e952634ec2edddbf33b6/transformed/animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/a389af3539f82c57c1c2892b5af61089/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/a389af3539f82c57c1c2892b5af61089/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/4a1ad5c2b51b2d6e6649f2ebd429a38b/transformed/ui-util-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/4a1ad5c2b51b2d6e6649f2ebd429a38b/transformed/ui-util-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/dcb4709feead0a7ca49c485ac48c2a2b/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/dcb4709feead0a7ca49c485ac48c2a2b/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/pintu236/.gradle/caches/transforms-3/f94fafee5209d3b3b04bb9a876e64a5b/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/pintu236/.gradle/caches/transforms-3/f94fafee5209d3b3b04bb9a876e64a5b/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/pintu236/.gradle/caches/transforms-3/dbad316f89f8caad2b7a2e6654e4ccf6/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/pintu236/.gradle/caches/transforms-3/dbad316f89f8caad2b7a2e6654e4ccf6/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/pintu236/.gradle/caches/transforms-3/ea02642b595b21678a6a883e5baab5be/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/pintu236/.gradle/caches/transforms-3/ea02642b595b21678a6a883e5baab5be/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/pintu236/.gradle/caches/transforms-3/a2da7b8577034f77c42a9b6b0f81eae8/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/pintu236/.gradle/caches/transforms-3/a2da7b8577034f77c42a9b6b0f81eae8/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] /Users/pintu236/.gradle/caches/transforms-3/d379d7476e7e6c6f4a79031f11423eef/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] /Users/pintu236/.gradle/caches/transforms-3/d379d7476e7e6c6f4a79031f11423eef/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/pintu236/.gradle/caches/transforms-3/4d3b0bd0f3120581dffd370904db2e92/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/pintu236/.gradle/caches/transforms-3/4d3b0bd0f3120581dffd370904db2e92/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-fido:20.1.0] /Users/pintu236/.gradle/caches/transforms-3/56b3468e2acb8d8d1531b3bd23aa5111/transformed/play-services-fido-20.1.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-fido:20.1.0] /Users/pintu236/.gradle/caches/transforms-3/56b3468e2acb8d8d1531b3bd23aa5111/transformed/play-services-fido-20.1.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] /Users/pintu236/.gradle/caches/transforms-3/65d8bf70ddda2e18cffe0146ab7554c0/transformed/play-services-auth-base-18.0.4/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] /Users/pintu236/.gradle/caches/transforms-3/65d8bf70ddda2e18cffe0146ab7554c0/transformed/play-services-auth-base-18.0.4/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/pintu236/.gradle/caches/transforms-3/493eeafbec0937294a6892138d9a94e2/transformed/play-services-base-18.0.1/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/pintu236/.gradle/caches/transforms-3/493eeafbec0937294a6892138d9a94e2/transformed/play-services-base-18.0.1/AndroidManifest.xml:18:5-43
+MERGED from [androidx.graphics:graphics-path:1.0.1] /Users/pintu236/.gradle/caches/transforms-3/7d32af7e5533e454f99f901ce5c1293a/transformed/graphics-path-1.0.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.graphics:graphics-path:1.0.1] /Users/pintu236/.gradle/caches/transforms-3/7d32af7e5533e454f99f901ce5c1293a/transformed/graphics-path-1.0.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/pintu236/.gradle/caches/transforms-3/bab54da4119b8e65fda7482c73c6f891/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/pintu236/.gradle/caches/transforms-3/bab54da4119b8e65fda7482c73c6f891/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/pintu236/.gradle/caches/transforms-3/c0c33d2a402b0781ef8bf2d139895ef6/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/pintu236/.gradle/caches/transforms-3/c0c33d2a402b0781ef8bf2d139895ef6/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.privacysandbox.ads:ads-adservices-java:1.0.0-beta05] /Users/pintu236/.gradle/caches/transforms-3/af159a94cc1a133cd7c6c6eb32db662e/transformed/ads-adservices-java-1.0.0-beta05/AndroidManifest.xml:5:5-44
+MERGED from [androidx.privacysandbox.ads:ads-adservices-java:1.0.0-beta05] /Users/pintu236/.gradle/caches/transforms-3/af159a94cc1a133cd7c6c6eb32db662e/transformed/ads-adservices-java-1.0.0-beta05/AndroidManifest.xml:5:5-44
+MERGED from [androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /Users/pintu236/.gradle/caches/transforms-3/e1f08e705d1f289d1e8538a974521821/transformed/ads-adservices-1.0.0-beta05/AndroidManifest.xml:20:5-44
+MERGED from [androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /Users/pintu236/.gradle/caches/transforms-3/e1f08e705d1f289d1e8538a974521821/transformed/ads-adservices-1.0.0-beta05/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.13.1] /Users/pintu236/.gradle/caches/transforms-3/f95dc5d7ef8c719d7fd3f73012bf0fa6/transformed/core-ktx-1.13.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.13.1] /Users/pintu236/.gradle/caches/transforms-3/f95dc5d7ef8c719d7fd3f73012bf0fa6/transformed/core-ktx-1.13.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core:1.13.1] /Users/pintu236/.gradle/caches/transforms-3/90178f5cd3e9f69903a92607dfebda90/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.13.1] /Users/pintu236/.gradle/caches/transforms-3/90178f5cd3e9f69903a92607dfebda90/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/pintu236/.gradle/caches/transforms-3/1b1fde90206bc504d9b6246085d5d430/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/pintu236/.gradle/caches/transforms-3/1b1fde90206bc504d9b6246085d5d430/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/pintu236/.gradle/caches/transforms-3/4ae73c47be410f07d52a6a11e2a54b68/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/pintu236/.gradle/caches/transforms-3/4ae73c47be410f07d52a6a11e2a54b68/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/24541552f82836165c9cec4906419256/transformed/lifecycle-livedata-core-ktx-2.8.3/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/24541552f82836165c9cec4906419256/transformed/lifecycle-livedata-core-ktx-2.8.3/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/7c279af4b810d27def1308444fe173af/transformed/lifecycle-livedata-core-2.8.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/7c279af4b810d27def1308444fe173af/transformed/lifecycle-livedata-core-2.8.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/6d74019c8528bfcef54a08c8d08efbf2/transformed/lifecycle-viewmodel-2.8.3/AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/6d74019c8528bfcef54a08c8d08efbf2/transformed/lifecycle-viewmodel-2.8.3/AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/6d68b75d02af90f2120c6fb35d46d484/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/6d68b75d02af90f2120c6fb35d46d484/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/d99734cac7726adcb50f8d5af1e8f5cb/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/d99734cac7726adcb50f8d5af1e8f5cb/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/a06b0506c98179d139d01ca991db9d07/transformed/lifecycle-runtime-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/a06b0506c98179d139d01ca991db9d07/transformed/lifecycle-runtime-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/ac1365184cf7ef956ce31f54cb7f3c95/transformed/lifecycle-process-2.8.3/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/ac1365184cf7ef956ce31f54cb7f3c95/transformed/lifecycle-process-2.8.3/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/68457c19401ee5c1a771a91e47b3a55c/transformed/lifecycle-livedata-2.8.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/68457c19401ee5c1a771a91e47b3a55c/transformed/lifecycle-livedata-2.8.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/ae3a907d674be10d90863880c8093d4f/transformed/lifecycle-viewmodel-savedstate-2.8.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/ae3a907d674be10d90863880c8093d4f/transformed/lifecycle-viewmodel-savedstate-2.8.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/844d6ba3db1120fd14b7269c8d33df21/transformed/lifecycle-viewmodel-ktx-2.8.3/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/844d6ba3db1120fd14b7269c8d33df21/transformed/lifecycle-viewmodel-ktx-2.8.3/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/593c14ea91b5dc4dbefaaf03c0622895/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/593c14ea91b5dc4dbefaaf03c0622895/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/1cce901dc4aa5ce9931f8dbeb37a763c/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/1cce901dc4aa5ce9931f8dbeb37a763c/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/96b5f4aceb33ab777b09d04f92fbffc3/transformed/ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/96b5f4aceb33ab777b09d04f92fbffc3/transformed/ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/66b6eaf2f01254a858c52fcd361c6a97/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/66b6eaf2f01254a858c52fcd361c6a97/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/1d202f1e4d1e45babc40b11a53df9c38/transformed/animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/1d202f1e4d1e45babc40b11a53df9c38/transformed/animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/618c9713db07d6f503ee7391dc4b63d2/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/618c9713db07d6f503ee7391dc4b63d2/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/cbf13c8f20134fd91f7fadab30824aac/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/cbf13c8f20134fd91f7fadab30824aac/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/0516e20861dc5bb4561999b7755f62f3/transformed/runtime-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.7.0-beta06] /Users/pintu236/.gradle/caches/transforms-3/0516e20861dc5bb4561999b7755f62f3/transformed/runtime-release/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-installations-interop:17.1.1] /Users/pintu236/.gradle/caches/transforms-3/417edeb8d65cb445419a56e8fa7dc5c8/transformed/firebase-installations-interop-17.1.1/AndroidManifest.xml:17:5-44
+MERGED from [com.google.firebase:firebase-installations-interop:17.1.1] /Users/pintu236/.gradle/caches/transforms-3/417edeb8d65cb445419a56e8fa7dc5c8/transformed/firebase-installations-interop-17.1.1/AndroidManifest.xml:17:5-44
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/pintu236/.gradle/caches/transforms-3/e051fb4d3bd5d0425ac8b308ce3429f4/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:3:5-44
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/pintu236/.gradle/caches/transforms-3/e051fb4d3bd5d0425ac8b308ce3429f4/transformed/play-services-tasks-18.2.0/AndroidManifest.xml:3:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/pintu236/.gradle/caches/transforms-3/6a0bbaada3c18bbacaa696163a29baf9/transformed/firebase-measurement-connector-19.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/pintu236/.gradle/caches/transforms-3/6a0bbaada3c18bbacaa696163a29baf9/transformed/firebase-measurement-connector-19.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] /Users/pintu236/.gradle/caches/transforms-3/8b447d21efc58fa421894b52beaf506d/transformed/play-services-basement-18.4.0/AndroidManifest.xml:3:5-44
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] /Users/pintu236/.gradle/caches/transforms-3/8b447d21efc58fa421894b52beaf506d/transformed/play-services-basement-18.4.0/AndroidManifest.xml:3:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/pintu236/.gradle/caches/transforms-3/158fcb453bece38f09b72dc21be88967/transformed/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/pintu236/.gradle/caches/transforms-3/158fcb453bece38f09b72dc21be88967/transformed/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.8.0] /Users/pintu236/.gradle/caches/transforms-3/fc63ca71dcf12ae43d8221ba97d23581/transformed/activity-1.8.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.0] /Users/pintu236/.gradle/caches/transforms-3/fc63ca71dcf12ae43d8221ba97d23581/transformed/activity-1.8.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.0] /Users/pintu236/.gradle/caches/transforms-3/03aaf704503d041310b0f3091f67eace/transformed/activity-ktx-1.8.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.0] /Users/pintu236/.gradle/caches/transforms-3/03aaf704503d041310b0f3091f67eace/transformed/activity-ktx-1.8.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.8.0] /Users/pintu236/.gradle/caches/transforms-3/fd56d0a370667578cc61866081e12b5a/transformed/activity-compose-1.8.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.8.0] /Users/pintu236/.gradle/caches/transforms-3/fd56d0a370667578cc61866081e12b5a/transformed/activity-compose-1.8.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.0] /Users/pintu236/.gradle/caches/transforms-3/4a831428ac7d729647aca4aad8d5ddb7/transformed/googleid-1.1.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.0] /Users/pintu236/.gradle/caches/transforms-3/4a831428ac7d729647aca4aad8d5ddb7/transformed/googleid-1.1.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /Users/pintu236/.gradle/caches/transforms-3/3aefaa7a021243be7ad94831147e4640/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /Users/pintu236/.gradle/caches/transforms-3/3aefaa7a021243be7ad94831147e4640/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/pintu236/.gradle/caches/transforms-3/6d91e5c29ba8f4abfbc39d3fd67e0b6c/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/pintu236/.gradle/caches/transforms-3/6d91e5c29ba8f4abfbc39d3fd67e0b6c/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-components:18.0.0] /Users/pintu236/.gradle/caches/transforms-3/b8cdbf1b531ce862951bc3975c136b7a/transformed/firebase-components-18.0.0/AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-components:18.0.0] /Users/pintu236/.gradle/caches/transforms-3/b8cdbf1b531ce862951bc3975c136b7a/transformed/firebase-components-18.0.0/AndroidManifest.xml:18:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pintu236/.gradle/caches/transforms-3/19b5218a02fa013db661e0fd03f06408/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pintu236/.gradle/caches/transforms-3/19b5218a02fa013db661e0fd03f06408/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/pintu236/.gradle/caches/transforms-3/f838c4693b7c883b36e80c505544b7f6/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/pintu236/.gradle/caches/transforms-3/f838c4693b7c883b36e80c505544b7f6/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/pintu236/.gradle/caches/transforms-3/7749ff3127a0a0adaef9c13b7b0bd602/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/pintu236/.gradle/caches/transforms-3/7749ff3127a0a0adaef9c13b7b0bd602/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/pintu236/.gradle/caches/transforms-3/23565aa8e77469a738c78b6077b74fe8/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/pintu236/.gradle/caches/transforms-3/23565aa8e77469a738c78b6077b74fe8/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/pintu236/.gradle/caches/transforms-3/782a7f66db3aa396b356b9a37319b60b/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/pintu236/.gradle/caches/transforms-3/782a7f66db3aa396b356b9a37319b60b/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/pintu236/.gradle/caches/transforms-3/b2f73de9f0a2d1333ef337afe2c9e6e3/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/pintu236/.gradle/caches/transforms-3/b2f73de9f0a2d1333ef337afe2c9e6e3/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/pintu236/.gradle/caches/transforms-3/67f687b617a08d496b63a76a39e11ec2/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/pintu236/.gradle/caches/transforms-3/67f687b617a08d496b63a76a39e11ec2/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/pintu236/.gradle/caches/transforms-3/e979b14e45919f57c51e8081b1fd67d9/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/pintu236/.gradle/caches/transforms-3/e979b14e45919f57c51e8081b1fd67d9/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+	tools:overrideLibrary
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:23:9-148
+	android:targetSdkVersion
+		INJECTED from /Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/pintu236/StudioProjects/arjunpscwala/android/androidApp/src/main/AndroidManifest.xml
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-auth-ktx:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/0b79703160f13f205485e66c2fcbe5c8/transformed/firebase-auth-ktx-23.0.0/AndroidManifest.xml:8:9-14:19
+MERGED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:66:9-72:19
+MERGED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:66:9-72:19
+MERGED from [com.google.firebase:firebase-analytics-ktx:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/a49950b50adecea44e2beaae99217370/transformed/firebase-analytics-ktx-22.0.2/AndroidManifest.xml:8:9-14:19
+MERGED from [com.google.firebase:firebase-analytics-ktx:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/a49950b50adecea44e2beaae99217370/transformed/firebase-analytics-ktx-22.0.2/AndroidManifest.xml:8:9-14:19
+MERGED from [com.google.android.gms:play-services-measurement-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/85dcf6d31296fd9b80af4e7b90235254/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:34:9-40:19
+MERGED from [com.google.android.gms:play-services-measurement-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/85dcf6d31296fd9b80af4e7b90235254/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:34:9-40:19
+MERGED from [com.google.firebase:firebase-installations:18.0.0] /Users/pintu236/.gradle/caches/transforms-3/4786d61ee83456c8f35d18f67d7a5c0c/transformed/firebase-installations-18.0.0/AndroidManifest.xml:12:9-21:19
+MERGED from [com.google.firebase:firebase-installations:18.0.0] /Users/pintu236/.gradle/caches/transforms-3/4786d61ee83456c8f35d18f67d7a5c0c/transformed/firebase-installations-18.0.0/AndroidManifest.xml:12:9-21:19
+MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/pintu236/.gradle/caches/transforms-3/11b7079974aeaa17b399a538f6be3084/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/pintu236/.gradle/caches/transforms-3/11b7079974aeaa17b399a538f6be3084/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.firebase:firebase-common:21.0.0] /Users/pintu236/.gradle/caches/transforms-3/b446036f81601df82ba4085676259dee/transformed/firebase-common-21.0.0/AndroidManifest.xml:30:9-38:19
+MERGED from [com.google.firebase:firebase-common:21.0.0] /Users/pintu236/.gradle/caches/transforms-3/b446036f81601df82ba4085676259dee/transformed/firebase-common-21.0.0/AndroidManifest.xml:30:9-38:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth-ktx:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/0b79703160f13f205485e66c2fcbe5c8/transformed/firebase-auth-ktx-23.0.0/AndroidManifest.xml:10:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/pintu236/.gradle/caches/transforms-3/b446036f81601df82ba4085676259dee/transformed/firebase-common-21.0.0/AndroidManifest.xml:34:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/pintu236/.gradle/caches/transforms-3/b446036f81601df82ba4085676259dee/transformed/firebase-common-21.0.0/AndroidManifest.xml:32:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-auth-ktx:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/0b79703160f13f205485e66c2fcbe5c8/transformed/firebase-auth-ktx-23.0.0/AndroidManifest.xml:9:13-84
+meta-data#com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthLegacyRegistrar
+ADDED from [com.google.firebase:firebase-auth-ktx:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/0b79703160f13f205485e66c2fcbe5c8/transformed/firebase-auth-ktx-23.0.0/AndroidManifest.xml:11:13-13:85
+	android:value
+		ADDED from [com.google.firebase:firebase-auth-ktx:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/0b79703160f13f205485e66c2fcbe5c8/transformed/firebase-auth-ktx-23.0.0/AndroidManifest.xml:13:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-auth-ktx:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/0b79703160f13f205485e66c2fcbe5c8/transformed/firebase-auth-ktx-23.0.0/AndroidManifest.xml:12:17-119
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:26:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/85dcf6d31296fd9b80af4e7b90235254/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/85dcf6d31296fd9b80af4e7b90235254/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-installations:18.0.0] /Users/pintu236/.gradle/caches/transforms-3/4786d61ee83456c8f35d18f67d7a5c0c/transformed/firebase-installations-18.0.0/AndroidManifest.xml:7:5-79
+MERGED from [com.google.firebase:firebase-installations:18.0.0] /Users/pintu236/.gradle/caches/transforms-3/4786d61ee83456c8f35d18f67d7a5c0c/transformed/firebase-installations-18.0.0/AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-measurement:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a9491e9752bee1296489ed408a9e7a/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a9491e9752bee1296489ed408a9e7a/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] /Users/pintu236/.gradle/caches/transforms-3/bdeebac8acc717f338574acffd92d9cc/transformed/recaptcha-18.4.0/AndroidManifest.xml:8:5-79
+MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] /Users/pintu236/.gradle/caches/transforms-3/bdeebac8acc717f338574acffd92d9cc/transformed/recaptcha-18.4.0/AndroidManifest.xml:8:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/845501a4571d14d3a307e68baa50cc13/transformed/play-services-measurement-impl-22.0.2/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/845501a4571d14d3a307e68baa50cc13/transformed/play-services-measurement-impl-22.0.2/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a027a98d54ab24e2aa49af90495b97/transformed/play-services-measurement-sdk-api-22.0.2/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a027a98d54ab24e2aa49af90495b97/transformed/play-services-measurement-sdk-api-22.0.2/AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:26:22-76
+activity#com.google.firebase.auth.internal.GenericIdpActivity
+ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:29:9-46:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:31:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:33:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:32:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:34:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:30:13-80
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:genericidp
+ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:35:13-45:29
+action#android.intent.action.VIEW
+ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:36:17-69
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:36:25-66
+category#android.intent.category.DEFAULT
+ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:38:17-76
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:38:27-73
+category#android.intent.category.BROWSABLE
+ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:39:17-78
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:39:27-75
+data
+ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:41:17-44:51
+	android:path
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:43:21-37
+	android:host
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:42:21-49
+	android:scheme
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:44:21-48
+activity#com.google.firebase.auth.internal.RecaptchaActivity
+ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:47:9-64:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:49:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:51:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:50:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:52:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:48:13-79
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:recaptcha
+ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:53:13-63:29
+meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
+ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:69:13-71:85
+	android:value
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:71:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/pintu236/.gradle/caches/transforms-3/f6e5752cedf2596d51d65f917032a182/transformed/firebase-auth-23.0.0/AndroidManifest.xml:70:17-109
+meta-data#com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsLegacyRegistrar
+ADDED from [com.google.firebase:firebase-analytics-ktx:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/a49950b50adecea44e2beaae99217370/transformed/firebase-analytics-ktx-22.0.2/AndroidManifest.xml:11:13-13:85
+	android:value
+		ADDED from [com.google.firebase:firebase-analytics-ktx:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/a49950b50adecea44e2beaae99217370/transformed/firebase-analytics-ktx-22.0.2/AndroidManifest.xml:13:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics-ktx:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/a49950b50adecea44e2beaae99217370/transformed/firebase-analytics-ktx-22.0.2/AndroidManifest.xml:12:17-129
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.android.gms:play-services-measurement-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/85dcf6d31296fd9b80af4e7b90235254/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a9491e9752bee1296489ed408a9e7a/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a9491e9752bee1296489ed408a9e7a/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/845501a4571d14d3a307e68baa50cc13/transformed/play-services-measurement-impl-22.0.2/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/845501a4571d14d3a307e68baa50cc13/transformed/play-services-measurement-impl-22.0.2/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a027a98d54ab24e2aa49af90495b97/transformed/play-services-measurement-sdk-api-22.0.2/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a027a98d54ab24e2aa49af90495b97/transformed/play-services-measurement-sdk-api-22.0.2/AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/85dcf6d31296fd9b80af4e7b90235254/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:24:22-65
+uses-permission#com.google.android.gms.permission.AD_ID
+ADDED from [com.google.android.gms:play-services-measurement-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/85dcf6d31296fd9b80af4e7b90235254/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/845501a4571d14d3a307e68baa50cc13/transformed/play-services-measurement-impl-22.0.2/AndroidManifest.xml:27:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/845501a4571d14d3a307e68baa50cc13/transformed/play-services-measurement-impl-22.0.2/AndroidManifest.xml:27:5-79
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] /Users/pintu236/.gradle/caches/transforms-3/7a49140db646825276d9a179a914939d/transformed/play-services-ads-identifier-18.0.0/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] /Users/pintu236/.gradle/caches/transforms-3/7a49140db646825276d9a179a914939d/transformed/play-services-ads-identifier-18.0.0/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a027a98d54ab24e2aa49af90495b97/transformed/play-services-measurement-sdk-api-22.0.2/AndroidManifest.xml:26:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a027a98d54ab24e2aa49af90495b97/transformed/play-services-measurement-sdk-api-22.0.2/AndroidManifest.xml:26:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/85dcf6d31296fd9b80af4e7b90235254/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:25:22-76
+uses-permission#android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+ADDED from [com.google.android.gms:play-services-measurement-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/85dcf6d31296fd9b80af4e7b90235254/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:26:5-88
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a027a98d54ab24e2aa49af90495b97/transformed/play-services-measurement-sdk-api-22.0.2/AndroidManifest.xml:27:5-88
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a027a98d54ab24e2aa49af90495b97/transformed/play-services-measurement-sdk-api-22.0.2/AndroidManifest.xml:27:5-88
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/85dcf6d31296fd9b80af4e7b90235254/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:26:22-85
+uses-permission#android.permission.ACCESS_ADSERVICES_AD_ID
+ADDED from [com.google.android.gms:play-services-measurement-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/85dcf6d31296fd9b80af4e7b90235254/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:27:5-82
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a027a98d54ab24e2aa49af90495b97/transformed/play-services-measurement-sdk-api-22.0.2/AndroidManifest.xml:28:5-82
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a027a98d54ab24e2aa49af90495b97/transformed/play-services-measurement-sdk-api-22.0.2/AndroidManifest.xml:28:5-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/85dcf6d31296fd9b80af4e7b90235254/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:27:22-79
+property
+ADDED from [com.google.android.gms:play-services-measurement-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/85dcf6d31296fd9b80af4e7b90235254/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:30:9-32:61
+	android:resource
+		ADDED from [com.google.android.gms:play-services-measurement-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/85dcf6d31296fd9b80af4e7b90235254/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:32:13-58
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/85dcf6d31296fd9b80af4e7b90235254/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:31:13-65
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.android.gms:play-services-measurement-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/85dcf6d31296fd9b80af4e7b90235254/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:37:13-39:85
+	android:value
+		ADDED from [com.google.android.gms:play-services-measurement-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/85dcf6d31296fd9b80af4e7b90235254/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:39:17-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/85dcf6d31296fd9b80af4e7b90235254/transformed/play-services-measurement-api-22.0.2/AndroidManifest.xml:38:17-139
+meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar
+ADDED from [com.google.firebase:firebase-installations:18.0.0] /Users/pintu236/.gradle/caches/transforms-3/4786d61ee83456c8f35d18f67d7a5c0c/transformed/firebase-installations-18.0.0/AndroidManifest.xml:15:13-17:85
+	android:value
+		ADDED from [com.google.firebase:firebase-installations:18.0.0] /Users/pintu236/.gradle/caches/transforms-3/4786d61ee83456c8f35d18f67d7a5c0c/transformed/firebase-installations-18.0.0/AndroidManifest.xml:17:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-installations:18.0.0] /Users/pintu236/.gradle/caches/transforms-3/4786d61ee83456c8f35d18f67d7a5c0c/transformed/firebase-installations-18.0.0/AndroidManifest.xml:16:17-130
+meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar
+ADDED from [com.google.firebase:firebase-installations:18.0.0] /Users/pintu236/.gradle/caches/transforms-3/4786d61ee83456c8f35d18f67d7a5c0c/transformed/firebase-installations-18.0.0/AndroidManifest.xml:18:13-20:85
+	android:value
+		ADDED from [com.google.firebase:firebase-installations:18.0.0] /Users/pintu236/.gradle/caches/transforms-3/4786d61ee83456c8f35d18f67d7a5c0c/transformed/firebase-installations-18.0.0/AndroidManifest.xml:20:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-installations:18.0.0] /Users/pintu236/.gradle/caches/transforms-3/4786d61ee83456c8f35d18f67d7a5c0c/transformed/firebase-installations-18.0.0/AndroidManifest.xml:19:17-127
+meta-data#com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar
+ADDED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/pintu236/.gradle/caches/transforms-3/11b7079974aeaa17b399a538f6be3084/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:12:13-14:85
+	android:value
+		ADDED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/pintu236/.gradle/caches/transforms-3/11b7079974aeaa17b399a538f6be3084/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:14:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-common-ktx:21.0.0] /Users/pintu236/.gradle/caches/transforms-3/11b7079974aeaa17b399a538f6be3084/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:13:17-116
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/pintu236/.gradle/caches/transforms-3/b446036f81601df82ba4085676259dee/transformed/firebase-common-21.0.0/AndroidManifest.xml:23:9-28:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/pintu236/.gradle/caches/transforms-3/b446036f81601df82ba4085676259dee/transformed/firebase-common-21.0.0/AndroidManifest.xml:25:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/pintu236/.gradle/caches/transforms-3/b446036f81601df82ba4085676259dee/transformed/firebase-common-21.0.0/AndroidManifest.xml:27:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/pintu236/.gradle/caches/transforms-3/b446036f81601df82ba4085676259dee/transformed/firebase-common-21.0.0/AndroidManifest.xml:26:13-43
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/pintu236/.gradle/caches/transforms-3/b446036f81601df82ba4085676259dee/transformed/firebase-common-21.0.0/AndroidManifest.xml:28:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/pintu236/.gradle/caches/transforms-3/b446036f81601df82ba4085676259dee/transformed/firebase-common-21.0.0/AndroidManifest.xml:24:13-77
+meta-data#com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar
+ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/pintu236/.gradle/caches/transforms-3/b446036f81601df82ba4085676259dee/transformed/firebase-common-21.0.0/AndroidManifest.xml:35:13-37:85
+	android:value
+		ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/pintu236/.gradle/caches/transforms-3/b446036f81601df82ba4085676259dee/transformed/firebase-common-21.0.0/AndroidManifest.xml:37:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-common:21.0.0] /Users/pintu236/.gradle/caches/transforms-3/b446036f81601df82ba4085676259dee/transformed/firebase-common-21.0.0/AndroidManifest.xml:36:17-109
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.android.gms:play-services-measurement:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a9491e9752bee1296489ed408a9e7a/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/845501a4571d14d3a307e68baa50cc13/transformed/play-services-measurement-impl-22.0.2/AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/845501a4571d14d3a307e68baa50cc13/transformed/play-services-measurement-impl-22.0.2/AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a9491e9752bee1296489ed408a9e7a/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.android.gms:play-services-measurement:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a9491e9752bee1296489ed408a9e7a/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a9491e9752bee1296489ed408a9e7a/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a9491e9752bee1296489ed408a9e7a/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a9491e9752bee1296489ed408a9e7a/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:30:13-85
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.android.gms:play-services-measurement:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a9491e9752bee1296489ed408a9e7a/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:35:9-38:40
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a9491e9752bee1296489ed408a9e7a/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a9491e9752bee1296489ed408a9e7a/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:38:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a9491e9752bee1296489ed408a9e7a/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:36:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.android.gms:play-services-measurement:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a9491e9752bee1296489ed408a9e7a/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:39:9-43:72
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a9491e9752bee1296489ed408a9e7a/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:41:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a9491e9752bee1296489ed408a9e7a/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:42:13-37
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a9491e9752bee1296489ed408a9e7a/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:43:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:22.0.2] /Users/pintu236/.gradle/caches/transforms-3/91a9491e9752bee1296489ed408a9e7a/transformed/play-services-measurement-22.0.2/AndroidManifest.xml:40:13-87
+service#androidx.credentials.playservices.CredentialProviderMetadataHolder
+ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/pintu236/.gradle/caches/transforms-3/2dee61d60e34ab83a3df9d9ad8c7a7de/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:24:9-32:19
+	android:enabled
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/pintu236/.gradle/caches/transforms-3/2dee61d60e34ab83a3df9d9ad8c7a7de/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:26:13-35
+	android:exported
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/pintu236/.gradle/caches/transforms-3/2dee61d60e34ab83a3df9d9ad8c7a7de/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:27:13-37
+	tools:ignore
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/pintu236/.gradle/caches/transforms-3/2dee61d60e34ab83a3df9d9ad8c7a7de/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:28:13-60
+	android:name
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/pintu236/.gradle/caches/transforms-3/2dee61d60e34ab83a3df9d9ad8c7a7de/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:25:13-94
+meta-data#androidx.credentials.CREDENTIAL_PROVIDER_KEY
+ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/pintu236/.gradle/caches/transforms-3/2dee61d60e34ab83a3df9d9ad8c7a7de/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:29:13-31:104
+	android:value
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/pintu236/.gradle/caches/transforms-3/2dee61d60e34ab83a3df9d9ad8c7a7de/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:31:17-101
+	android:name
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/pintu236/.gradle/caches/transforms-3/2dee61d60e34ab83a3df9d9ad8c7a7de/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:30:17-76
+activity#androidx.credentials.playservices.HiddenActivity
+ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/pintu236/.gradle/caches/transforms-3/2dee61d60e34ab83a3df9d9ad8c7a7de/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:34:9-41:20
+	android:fitsSystemWindows
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/pintu236/.gradle/caches/transforms-3/2dee61d60e34ab83a3df9d9ad8c7a7de/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:39:13-45
+	android:enabled
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/pintu236/.gradle/caches/transforms-3/2dee61d60e34ab83a3df9d9ad8c7a7de/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/pintu236/.gradle/caches/transforms-3/2dee61d60e34ab83a3df9d9ad8c7a7de/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:38:13-37
+	android:configChanges
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/pintu236/.gradle/caches/transforms-3/2dee61d60e34ab83a3df9d9ad8c7a7de/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:36:13-87
+	android:theme
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/pintu236/.gradle/caches/transforms-3/2dee61d60e34ab83a3df9d9ad8c7a7de/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:40:13-48
+	android:name
+		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/pintu236/.gradle/caches/transforms-3/2dee61d60e34ab83a3df9d9ad8c7a7de/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:35:13-76
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/pintu236/.gradle/caches/transforms-3/fdffe7607247d36fe099641f5b60853f/transformed/play-services-auth-20.7.0/AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/pintu236/.gradle/caches/transforms-3/fdffe7607247d36fe099641f5b60853f/transformed/play-services-auth-20.7.0/AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/pintu236/.gradle/caches/transforms-3/fdffe7607247d36fe099641f5b60853f/transformed/play-services-auth-20.7.0/AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/pintu236/.gradle/caches/transforms-3/fdffe7607247d36fe099641f5b60853f/transformed/play-services-auth-20.7.0/AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/pintu236/.gradle/caches/transforms-3/fdffe7607247d36fe099641f5b60853f/transformed/play-services-auth-20.7.0/AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/pintu236/.gradle/caches/transforms-3/fdffe7607247d36fe099641f5b60853f/transformed/play-services-auth-20.7.0/AndroidManifest.xml:33:9-37:51
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/pintu236/.gradle/caches/transforms-3/fdffe7607247d36fe099641f5b60853f/transformed/play-services-auth-20.7.0/AndroidManifest.xml:35:13-36
+	android:visibleToInstantApps
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/pintu236/.gradle/caches/transforms-3/fdffe7607247d36fe099641f5b60853f/transformed/play-services-auth-20.7.0/AndroidManifest.xml:37:13-48
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/pintu236/.gradle/caches/transforms-3/fdffe7607247d36fe099641f5b60853f/transformed/play-services-auth-20.7.0/AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/pintu236/.gradle/caches/transforms-3/fdffe7607247d36fe099641f5b60853f/transformed/play-services-auth-20.7.0/AndroidManifest.xml:34:13-89
+uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
+ADDED from [com.google.android.recaptcha:recaptcha:18.4.0] /Users/pintu236/.gradle/caches/transforms-3/bdeebac8acc717f338574acffd92d9cc/transformed/recaptcha-18.4.0/AndroidManifest.xml:9:5-98
+	android:name
+		ADDED from [com.google.android.recaptcha:recaptcha:18.4.0] /Users/pintu236/.gradle/caches/transforms-3/bdeebac8acc717f338574acffd92d9cc/transformed/recaptcha-18.4.0/AndroidManifest.xml:9:22-95
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/pintu236/.gradle/caches/transforms-3/ea02642b595b21678a6a883e5baab5be/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/ac1365184cf7ef956ce31f54cb7f3c95/transformed/lifecycle-process-2.8.3/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/ac1365184cf7ef956ce31f54cb7f3c95/transformed/lifecycle-process-2.8.3/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pintu236/.gradle/caches/transforms-3/19b5218a02fa013db661e0fd03f06408/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pintu236/.gradle/caches/transforms-3/19b5218a02fa013db661e0fd03f06408/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/pintu236/.gradle/caches/transforms-3/f838c4693b7c883b36e80c505544b7f6/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/pintu236/.gradle/caches/transforms-3/f838c4693b7c883b36e80c505544b7f6/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/pintu236/.gradle/caches/transforms-3/ea02642b595b21678a6a883e5baab5be/transformed/emoji2-1.3.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/pintu236/.gradle/caches/transforms-3/ea02642b595b21678a6a883e5baab5be/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/pintu236/.gradle/caches/transforms-3/ea02642b595b21678a6a883e5baab5be/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/pintu236/.gradle/caches/transforms-3/ea02642b595b21678a6a883e5baab5be/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/pintu236/.gradle/caches/transforms-3/ea02642b595b21678a6a883e5baab5be/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/pintu236/.gradle/caches/transforms-3/ea02642b595b21678a6a883e5baab5be/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/pintu236/.gradle/caches/transforms-3/ea02642b595b21678a6a883e5baab5be/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.0.1] /Users/pintu236/.gradle/caches/transforms-3/493eeafbec0937294a6892138d9a94e2/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] /Users/pintu236/.gradle/caches/transforms-3/493eeafbec0937294a6892138d9a94e2/transformed/play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] /Users/pintu236/.gradle/caches/transforms-3/493eeafbec0937294a6892138d9a94e2/transformed/play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] /Users/pintu236/.gradle/caches/transforms-3/493eeafbec0937294a6892138d9a94e2/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+uses-library#android.ext.adservices
+ADDED from [androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /Users/pintu236/.gradle/caches/transforms-3/e1f08e705d1f289d1e8538a974521821/transformed/ads-adservices-1.0.0-beta05/AndroidManifest.xml:23:9-25:40
+	android:required
+		ADDED from [androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /Users/pintu236/.gradle/caches/transforms-3/e1f08e705d1f289d1e8538a974521821/transformed/ads-adservices-1.0.0-beta05/AndroidManifest.xml:25:13-37
+	android:name
+		ADDED from [androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /Users/pintu236/.gradle/caches/transforms-3/e1f08e705d1f289d1e8538a974521821/transformed/ads-adservices-1.0.0-beta05/AndroidManifest.xml:24:13-50
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/pintu236/.gradle/caches/transforms-3/90178f5cd3e9f69903a92607dfebda90/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.1] /Users/pintu236/.gradle/caches/transforms-3/90178f5cd3e9f69903a92607dfebda90/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/pintu236/.gradle/caches/transforms-3/90178f5cd3e9f69903a92607dfebda90/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+permission#com.arjunpscwala.pscwala.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/pintu236/.gradle/caches/transforms-3/90178f5cd3e9f69903a92607dfebda90/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.1] /Users/pintu236/.gradle/caches/transforms-3/90178f5cd3e9f69903a92607dfebda90/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/pintu236/.gradle/caches/transforms-3/90178f5cd3e9f69903a92607dfebda90/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/pintu236/.gradle/caches/transforms-3/90178f5cd3e9f69903a92607dfebda90/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/pintu236/.gradle/caches/transforms-3/90178f5cd3e9f69903a92607dfebda90/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+uses-permission#com.arjunpscwala.pscwala.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/pintu236/.gradle/caches/transforms-3/90178f5cd3e9f69903a92607dfebda90/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/pintu236/.gradle/caches/transforms-3/90178f5cd3e9f69903a92607dfebda90/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/ac1365184cf7ef956ce31f54cb7f3c95/transformed/lifecycle-process-2.8.3/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/ac1365184cf7ef956ce31f54cb7f3c95/transformed/lifecycle-process-2.8.3/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.8.3] /Users/pintu236/.gradle/caches/transforms-3/ac1365184cf7ef956ce31f54cb7f3c95/transformed/lifecycle-process-2.8.3/AndroidManifest.xml:30:17-78
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:18.4.0] /Users/pintu236/.gradle/caches/transforms-3/8b447d21efc58fa421894b52beaf506d/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:9-122
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:18.4.0] /Users/pintu236/.gradle/caches/transforms-3/8b447d21efc58fa421894b52beaf506d/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:18.4.0] /Users/pintu236/.gradle/caches/transforms-3/8b447d21efc58fa421894b52beaf506d/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:20-65
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pintu236/.gradle/caches/transforms-3/19b5218a02fa013db661e0fd03f06408/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pintu236/.gradle/caches/transforms-3/19b5218a02fa013db661e0fd03f06408/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pintu236/.gradle/caches/transforms-3/19b5218a02fa013db661e0fd03f06408/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pintu236/.gradle/caches/transforms-3/19b5218a02fa013db661e0fd03f06408/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pintu236/.gradle/caches/transforms-3/19b5218a02fa013db661e0fd03f06408/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pintu236/.gradle/caches/transforms-3/19b5218a02fa013db661e0fd03f06408/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pintu236/.gradle/caches/transforms-3/19b5218a02fa013db661e0fd03f06408/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pintu236/.gradle/caches/transforms-3/19b5218a02fa013db661e0fd03f06408/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pintu236/.gradle/caches/transforms-3/19b5218a02fa013db661e0fd03f06408/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pintu236/.gradle/caches/transforms-3/19b5218a02fa013db661e0fd03f06408/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pintu236/.gradle/caches/transforms-3/19b5218a02fa013db661e0fd03f06408/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pintu236/.gradle/caches/transforms-3/19b5218a02fa013db661e0fd03f06408/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pintu236/.gradle/caches/transforms-3/19b5218a02fa013db661e0fd03f06408/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pintu236/.gradle/caches/transforms-3/19b5218a02fa013db661e0fd03f06408/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pintu236/.gradle/caches/transforms-3/19b5218a02fa013db661e0fd03f06408/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pintu236/.gradle/caches/transforms-3/19b5218a02fa013db661e0fd03f06408/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pintu236/.gradle/caches/transforms-3/19b5218a02fa013db661e0fd03f06408/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pintu236/.gradle/caches/transforms-3/19b5218a02fa013db661e0fd03f06408/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pintu236/.gradle/caches/transforms-3/19b5218a02fa013db661e0fd03f06408/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pintu236/.gradle/caches/transforms-3/19b5218a02fa013db661e0fd03f06408/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/pintu236/.gradle/caches/transforms-3/19b5218a02fa013db661e0fd03f06408/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92

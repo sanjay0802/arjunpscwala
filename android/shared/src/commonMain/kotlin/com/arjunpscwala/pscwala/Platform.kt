@@ -4,7 +4,7 @@ import kotlinx.serialization.Serializable
 
 
 @Serializable
-abstract class PhoneAuthInfo
+abstract class PhoneAuthInfo(val fbToken: String, val mobileNo: String)
 
 
 expect fun randomUUID(): Long

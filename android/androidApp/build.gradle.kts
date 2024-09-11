@@ -11,6 +11,14 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        create("release") {
+            storeFile = project.property("KEYSTORE_PATH")?.let { file(it) }
+            storePassword = project.property("KEYSTORE_PASSWORD") as String
+            keyAlias = project.property("KEY_ALIAS") as String
+            keyPassword = project.property("KEY_PASSWORD") as String
+        }
+    }
     namespace = "com.arjunpscwala.pscwala.android"
     compileSdk = 35
     defaultConfig {
@@ -19,6 +27,7 @@ android {
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
+        signingConfig = signingConfigs.getByName("release")
     }
     buildFeatures {
         compose = true
