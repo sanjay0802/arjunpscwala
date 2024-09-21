@@ -28,11 +28,11 @@ public class UserService {
 
 
 
-public User registerUser(User user){
+public Optional<User> registerUser(User user){
 
     System.out.println("User Details"+user);
 
     User newUser = userRepository.save(user);
-    return newUser;
+    return Optional.of(newUser);
 }
 }
