@@ -21,7 +21,7 @@ public class UserService {
     @Autowired
     UserRepository userRepository;
 
-    public Optional<User> verifyUserDetails(Long mobileNo) {
+    public List<Optional<User>> verifyUserDetails(Long mobileNo) {
 
            log.info("inside verifyUserDetails()");
 

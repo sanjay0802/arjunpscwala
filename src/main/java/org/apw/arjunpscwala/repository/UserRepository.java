@@ -13,7 +13,7 @@ import java.util.Optional;
 public interface UserRepository extends CrudRepository<User,Long> {
 
     @Query("Select u from User u where u.mobileNo= :mobileNo")
-    Optional<User> findUserByMobileNoAndFtoken(@Param("mobileNo") Long mobileNo);
+    List<Optional<User>> findUserByMobileNoAndFtoken(@Param("mobileNo") Long mobileNo);
 
     @Query("Select u from User u where u.mobileNo= :mobileNo or u.userName= :userName")
     List<Optional<User>> getUser(@Param("mobileNo") Long mobileNo, @Param("userName") String userName);

@@ -14,6 +14,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Optional;
 
 import static org.apw.arjunpscwala.constant.ApwConstants.USER_REGISTERED_MESSAGE;
@@ -35,10 +36,10 @@ public class UserController {
 
             log.info("inside verifyUser()"+ " Mobile No."+mobileNo+" Token: "+fbToken);
 
-            Optional<User> users = service.verifyUserDetails(mobileNo);
-            if (users.isPresent()) {
+            List<Optional<User>> users = service.verifyUserDetails(mobileNo);
+            if (!users.isEmpty()) {
 
-                StandardResponse<User> response = StandardResponse.success(users.get(), "Otp Verified Successfully", HttpStatus.OK.value());
+                StandardResponse<User> response = StandardResponse.success(users.get(0).get(), "Otp Verified Successfully", HttpStatus.OK.value());
                 return new ResponseEntity<>(response, HttpStatusCode.valueOf(200));
 
             } else {
@@ -71,7 +72,9 @@ public class UserController {
 
     @PostMapping("/update")
     public String updateUserDetails(@RequestBody User user) {
-        return "update user";
+
+      //  updateUserDetails()
+      return null;
     }
 
 
