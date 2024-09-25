@@ -21,16 +21,19 @@ public class UserService {
     @Autowired
     UserRepository userRepository;
 
-    public Optional<User> verifyUserDetails(Long mobileNo, String token) {
+    public Optional<User> verifyUserDetails(Long mobileNo) {
 
-        return userRepository.findUserByMobileNoAndFtoken(mobileNo, token);
+           log.info("inside verifyUserDetails()");
+
+        return userRepository.findUserByMobileNoAndFtoken(mobileNo);
 
 
     }
 
     public Optional<UserResponse> registerUser(User user) throws ApwException {
+        log.info("inside registerUser()"+ user);
 
-        System.out.println("User Details===>" + user);
+
         //case-1 username and mobile are same--pass
         //case-1 username same and mobile is different
 

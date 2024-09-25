@@ -1,6 +1,7 @@
 package org.apw.arjunpscwala.controller;
 
 
+import lombok.extern.slf4j.Slf4j;
 import org.apw.arjunpscwala.entity.User;
 import org.apw.arjunpscwala.exception.ApwException;
 import org.apw.arjunpscwala.model.StandardResponse;
@@ -19,7 +20,7 @@ import static org.apw.arjunpscwala.constant.ApwConstants.USER_REGISTERED_MESSAGE
 
 @RestController
 @RequestMapping("/apw")
-
+@Slf4j
 public class UserController {
 
 
@@ -32,9 +33,9 @@ public class UserController {
             Long mobileNo = Long.valueOf(data.get("mobileNo"));
             String fbToken = data.get("fbToken");
 
-            System.out.println("Mobile No" + mobileNo + "fbToken" + fbToken);
+            log.info("inside verifyUser()"+ " Mobile No."+mobileNo+" Token: "+fbToken);
 
-            Optional<User> users = service.verifyUserDetails(mobileNo, fbToken);
+            Optional<User> users = service.verifyUserDetails(mobileNo);
             if (users.isPresent()) {
 
                 StandardResponse<User> response = StandardResponse.success(users.get(), "Otp Verified Successfully", HttpStatus.OK.value());
