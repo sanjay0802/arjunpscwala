@@ -10,6 +10,7 @@ import org.apw.arjunpscwala.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 
@@ -26,21 +27,21 @@ public class UserService {
 
 
     }
-    
+
     public Optional<UserResponse> registerUser(User user) throws ApwException {
 
         System.out.println("User Details===>" + user);
         //case-1 username and mobile are same--pass
         //case-1 username same and mobile is different
 
-        Optional<User> user1 = userRepository.getUser(user.getMobileNo(), user.getUserName());
+        List<Optional<User>> user1 = userRepository.getUser(user.getMobileNo(), user.getUserName());
 
-        if (user1.isPresent()) {
-            if (user.getUserName().equalsIgnoreCase(user1.get().getUserName())) {
+        if (!user1.isEmpty()) {
+            if (user.getUserName().equalsIgnoreCase(user1.get(0).get().getUserName())) {
 
                 throw new ApwException("User Name Already Registered",user);
 
-            } else if (Objects.equals(user.getMobileNo(), user1.get().getMobileNo())) {
+            } else if (Objects.equals(user.getMobileNo(), user1.get(0).get().getMobileNo())) {
 
                 throw new ApwException("Mobile No.Already Registered",user);
 
