@@ -26,8 +26,7 @@ public class UserService {
 
 
     }
-
-
+    
     public Optional<UserResponse> registerUser(User user) throws ApwException {
 
         System.out.println("User Details===>" + user);
