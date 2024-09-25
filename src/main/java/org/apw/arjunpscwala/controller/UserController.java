@@ -42,7 +42,7 @@ public class UserController {
 
             } else {
 
-                StandardResponse<User> response = StandardResponse.failure(users.get(),"User Does not Exist", HttpStatus.UNAUTHORIZED.value());
+                StandardResponse<User> response = StandardResponse.failure(null,"User Does not Exist", HttpStatus.UNAUTHORIZED.value());
                 return new ResponseEntity<>(response, HttpStatusCode.valueOf(401));
 
             }
