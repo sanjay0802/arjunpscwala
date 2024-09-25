@@ -19,8 +19,8 @@ public class StandardResponse<T> {
       return new StandardResponse<T>(msg, status, data);
     }
 
-    public static <T> StandardResponse<T> failure(String msg,Integer status){
-        return new StandardResponse<T>(msg, status,null);
+    public static <T> StandardResponse<T> failure(T data,String msg,Integer status){
+        return new StandardResponse<T>(msg, status,data);
     }
 
 

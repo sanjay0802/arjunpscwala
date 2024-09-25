@@ -2,14 +2,12 @@ package org.apw.arjunpscwala.entity;
 
 
 import jakarta.persistence.*;
-import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
 @Entity
 @Data
-@Builder
 @Table(name = "APW_USER")
 @SequenceGenerator(name = "users_generator", sequenceName = "APW_USER_seq", allocationSize = 1)
 public class User {
@@ -18,6 +16,7 @@ public class User {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "users_generator")
     private Long userId;
     private Long mobileNo;
+    private String userName;
     private String name;
     private String gender;
     private String city;
@@ -38,6 +37,7 @@ public class User {
                 ", address='" + address + '\'' +
                 ", createdAt=" + createdAt +
                 ", ftoken='" + fbToken + '\'' +
+                ", userName='" + fbToken + '\'' +
                 '}';
     }
 }

@@ -12,6 +12,9 @@ import java.util.Optional;
 public interface UserRepository extends CrudRepository<User,Long> {
 
     @Query("Select u from User u where u.mobileNo= :mobileNo and u.fbToken= :fbToken")
-    Optional<User>findUserByMobileNoAndFtoken(@Param("mobileNo") Long mobileNo, @Param("fbToken") String fbToken);
+    Optional<User> findUserByMobileNoAndFtoken(@Param("mobileNo") Long mobileNo, @Param("fbToken") String fbToken);
+
+    @Query("Select u from User u where u.mobileNo= :mobileNo or u.userName= :userName")
+    Optional<User> getUser(@Param("mobileNo") Long mobileNo,@Param("userName") String userName);
 
 }

@@ -2,19 +2,20 @@ package org.apw.arjunpscwala.controller;
 
 
 import org.apw.arjunpscwala.entity.User;
+import org.apw.arjunpscwala.exception.ApwException;
 import org.apw.arjunpscwala.model.StandardResponse;
+import org.apw.arjunpscwala.model.UserResponse;
 import org.apw.arjunpscwala.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.Optional;
+
+import static org.apw.arjunpscwala.constant.ApwConstants.USER_REGISTERED_MESSAGE;
 
 @RestController
 @RequestMapping("/apw")
@@ -41,7 +42,7 @@ public class UserController {
 
             } else {
 
-                StandardResponse<User> response = StandardResponse.failure("User Does not Exist", HttpStatus.UNAUTHORIZED.value());
+                StandardResponse<User> response = StandardResponse.failure(users.get(),"User Does not Exist", HttpStatus.UNAUTHORIZED.value());
                 return new ResponseEntity<>(response, HttpStatusCode.valueOf(401));
 
             }
@@ -54,18 +55,17 @@ public class UserController {
 
     @PostMapping("/register")
 
-    public ResponseEntity<StandardResponse<User>> registerUser(@RequestBody User user) {
+    public ResponseEntity<StandardResponse<User>> registerUser(@RequestBody User user) throws ApwException {
 
         System.out.println("user details" + user.toString());
-        Optional<User> newUser = service.registerUser(user);
-        if (newUser.isPresent()) {
-            StandardResponse<User> response = StandardResponse.success(newUser.get(), "User Has Been Registered Successfully", HttpStatus.CREATED.value());
+        Optional<UserResponse> userResponse = service.registerUser(user);
 
-            return new ResponseEntity<>(response, HttpStatusCode.valueOf(201));
-        } else {
-            StandardResponse<User> response = StandardResponse.failure("Something went wrong please try again", HttpStatus.BAD_REQUEST.value());
-            return new ResponseEntity<>(response, HttpStatusCode.valueOf(400));
-        }
+            if (userResponse.get().getMsg().equalsIgnoreCase(USER_REGISTERED_MESSAGE)) {
+                StandardResponse<User> response = StandardResponse.success(userResponse.get().getUser(), "User Has Been Registered Successfully", HttpStatus.CREATED.value());
+                return new ResponseEntity<>(response, HttpStatusCode.valueOf(201));
+            }
+
+        return null;
     }
 
     @PostMapping("/update")
@@ -80,4 +80,17 @@ public class UserController {
 
     //registerUer(UserDetail,firebase tocken)
     //updateProfile(UserDetails)--update the user detail
+
+
+    @ExceptionHandler(value = ApwException.class)
+    @ResponseStatus(HttpStatus. BAD_REQUEST)
+    public StandardResponse handleCustomerAlreadyExistsException(ApwException ex) {
+
+        System.out.println("This is Custom Exception");
+        String message = ex.getMessage();
+        User user = ex.user;
+
+        return StandardResponse.failure(user,message,HttpStatus.BAD_REQUEST.value());
+    }
 }
+
