@@ -1,7 +1,7 @@
 package org.apw.arjunpscwala.service;
 
 
-
+import jakarta.transaction.Transactional;
 import lombok.extern.slf4j.Slf4j;
 import org.apw.arjunpscwala.entity.User;
 import org.apw.arjunpscwala.exception.ApwException;
@@ -59,4 +59,23 @@ public class UserService {
 
      return Optional.empty();
     }
+
+
+    @Transactional
+    public int updateUserDetails(User user) throws ApwException {
+
+        int i=0;
+
+        if(user!=null) {
+             i = userRepository.updateUserDetails(user.getCourse(), user.getCity(), user.getCourse(), user.getMobileNo());
+
+            return i;
+
+        }
+
+
+    return i;
+
+    }
+
 }

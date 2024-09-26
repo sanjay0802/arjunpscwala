@@ -71,19 +71,29 @@ public class UserController {
     }
 
     @PostMapping("/update")
-    public String updateUserDetails(@RequestBody User user) {
+    public ResponseEntity<StandardResponse<User>> updateUserDetail(@RequestBody User user) {
 
-      //  updateUserDetails()
-      return null;
+        log.info("inside updateUserDetail(): "+ user);
+
+        int i = service.updateUserDetails(user);
+
+        if(i>0){
+
+            StandardResponse<User> response = StandardResponse.success(user, "User Details Updated Successfully", HttpStatus.OK.value());
+            return new ResponseEntity<>(response, HttpStatusCode.valueOf(200));
+
+        }else{
+            StandardResponse<User> response = StandardResponse.failure(null,"User Does not Exist", HttpStatus.UNAUTHORIZED.value());
+            return new ResponseEntity<>(response, HttpStatusCode.valueOf(401));
+
+
+        }
+
+
+
     }
 
 
-    //verifyUser(mobile no, firebase tocken)
-    //selct * from mobile not exit then return 404
-    //if exist then update the token and return user details
-
-    //registerUer(UserDetail,firebase tocken)
-    //updateProfile(UserDetails)--update the user detail
 
 
     @ExceptionHandler(value = ApwException.class)
