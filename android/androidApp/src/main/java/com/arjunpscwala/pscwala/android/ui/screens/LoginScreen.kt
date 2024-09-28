@@ -53,6 +53,7 @@ import com.arjunpscwala.pscwala.android.ui.components.AppSnackbarHost
 import com.arjunpscwala.pscwala.android.ui.components.LoadingDialog
 import com.arjunpscwala.pscwala.android.ui.components.ShowError
 import com.arjunpscwala.pscwala.feature.login.LoginViewModel
+import com.arjunpscwala.pscwala.models.SnackbarState
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -73,7 +74,7 @@ fun LoginScreen(
         mutableStateOf("")
     }
     val loginUIState by loginViewModel.loginUIState.collectAsState()
-    
+
     LaunchedEffect(loginUIState.phoneAuthInfo) { // Use LaunchedEffect to trigger actions based on state
         if (loginUIState.phoneAuthInfo != null) {
             onVerifyOTP(loginUIState.phoneAuthInfo)
@@ -169,9 +170,11 @@ fun LoginScreen(
     ShowError(
         snackbarHostState = snackbarHostState,
         uiState = loginUIState,
-        errorMessages = loginUIState.errorMessages, onMessageDismiss = {
-            loginViewModel.retryLogin(mobileNumber,it)
-        }
+        snackBarState = SnackbarState(
+            errorMessages = loginUIState.errorMessages,
+            onMessageDismiss = {
+                loginViewModel.retryLogin(mobileNumber, it)
+            })
     )
 
 }

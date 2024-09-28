@@ -1,4 +1,3 @@
 package com.arjunpscwala.pscwala.models.state
 
-interface UIState {
-}
+abstract class UIState

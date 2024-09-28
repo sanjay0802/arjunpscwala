@@ -86,5 +86,5 @@ data class LoginUIState(
     val isLoading: Boolean = false,
     val errorMessages: List<ErrorMessage> = emptyList(),
     val phoneAuthInfo: PhoneAuthInfo? = null,
-) : UIState
+) : UIState()
 

@@ -90,7 +90,11 @@ class MainActivity : ComponentActivity() {
             }
 
             composable<Screen.Profile> {
-                ProfileScreen(onNavigateToHome = { navHostController.navigate(Screen.Home) })
+                ProfileScreen(onNavigateToHome = {
+                    navHostController.navigate(Screen.Home) {
+                        popUpTo(0)
+                    }
+                })
             }
 
             composable<Screen.Home> {

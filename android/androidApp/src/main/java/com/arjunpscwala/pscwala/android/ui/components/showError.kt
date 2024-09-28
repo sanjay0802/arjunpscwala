@@ -8,25 +8,27 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.res.stringResource
 import com.arjunpscwala.pscwala.android.R
 import com.arjunpscwala.pscwala.models.ErrorMessage
+import com.arjunpscwala.pscwala.models.SnackbarState
 import com.arjunpscwala.pscwala.models.state.UIState
 
 @Composable
 fun ShowError(
     snackbarHostState: SnackbarHostState,
     uiState: UIState,
-    errorMessages: List<ErrorMessage>, onMessageDismiss: (messageId: Long) -> Unit = {
+    snackBarState: SnackbarState,
 
-    }
-) {
+    ) {
     // Process one error message at a time and show them as Snackbars in the UI
-    if (errorMessages.isNotEmpty()) {
+    if (snackBarState.errorMessages.isNotEmpty()) {
 
         // Remember the errorMessage to display on the screen
-        val errorMessage = remember(uiState) { errorMessages[0] }
+        val errorMessage = remember(uiState) { snackBarState.errorMessages[0] }
 
         // Get the text to show on the message from resources
         val errorMessageText: String = errorMessage.message
-        val retryMessageText = stringResource(id = R.string.retry)
+        val retryMessageText = snackBarState.message.ifEmpty {
+            stringResource(R.string.retry)
+        }
 
 
         // If onRefreshPosts or onErrorDismiss change while the LaunchedEffect is running,
@@ -43,7 +45,7 @@ fun ShowError(
                 actionLabel = retryMessageText
             )
             if (snackbarResult == SnackbarResult.ActionPerformed) {
-                onMessageDismiss(errorMessage.id)
+                snackBarState.onMessageDismiss(errorMessage.id)
             }
             // Once the message is displayed and dismissed, notify the ViewModel
             //           onErrorDismissState(errorMessage.id)

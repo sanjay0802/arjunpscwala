@@ -60,12 +60,13 @@ class SignUpViewModel : ViewModel() {
                 }
                 val result = authRepository.signupUser(
                     SignUpRequest(
+                        userName = _registerUIState.value.userName,
                         mobileNo = _registerUIState.value.phoneNumber,
                         name = _registerUIState.value.fullName,
                         verificationId = data.fbToken
                     )
                 )
-                if (result.status != HttpStatusCode.OK.value) {
+                if (result.status == HttpStatusCode.Created.value) {
                     _registerUIState.update {
                         it.copy(isLoading = false, navigateToProfile = true)
                     }
@@ -73,7 +74,7 @@ class SignUpViewModel : ViewModel() {
                     _registerUIState.update {
                         val errorMessages = it.errorMessages + ErrorMessage(
                             id = randomUUID(),
-                            message = result.msg ?: ""
+                            message = result.parseError()
                         )
                         it.copy(errorMessages = errorMessages, isLoading = false)
                     }
@@ -91,6 +92,7 @@ class SignUpViewModel : ViewModel() {
             }
         }
     }
+
 
     override fun onCleared() {
         super.onCleared()
@@ -126,4 +128,4 @@ data class RegisterUIState(
     val fullName: String = "",
     val phoneNumber: String = "",
     val verificationId: String = "",
-) : UIState
+) : UIState()

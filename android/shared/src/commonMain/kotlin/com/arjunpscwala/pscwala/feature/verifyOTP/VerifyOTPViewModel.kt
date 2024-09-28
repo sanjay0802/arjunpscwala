@@ -1,4 +1,4 @@
-package com.arjunpscwala.pscwala.verifyOTP
+package com.arjunpscwala.pscwala.feature.verifyOTP
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -11,6 +11,7 @@ import com.arjunpscwala.pscwala.repository.AuthRepository
 import com.arjunpscwala.pscwala.repository.AuthRepositoryImpl
 import com.arjunpscwala.pscwala.utils.Event
 import com.arjunpscwala.pscwala.utils.EventBus
+import io.ktor.http.HttpStatusCode
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
@@ -75,13 +76,22 @@ class VerifyOTPViewModel : ViewModel() {
                     _verifyOTPUIState.value.phoneNumber,
                     _verifyOTPUIState.value.verificationId
                 )
-                if (result.status == 401) {
+                if (result.status == HttpStatusCode.OK.value) {
+                    _verifyOTPUIState.update {
+                        it.copy(isLoading = true, navToLogin = true)
+                    }
+
+                } else if (result.status == HttpStatusCode.Unauthorized.value) {
                     _verifyOTPUIState.update {
                         it.copy(isLoading = false, navToRegister = true)
                     }
                 } else {
                     _verifyOTPUIState.update {
-                        it.copy(isLoading = true, navToLogin = true)
+                        val errorMessages = it.errorMessages + ErrorMessage(
+                            id = randomUUID(),
+                            message = result.parseError()
+                        )
+                        it.copy(errorMessages = errorMessages, isLoading = false)
                     }
                 }
 
@@ -160,4 +170,4 @@ data class VerifyOTPUIState(
     val verificationId: String = "",
     val countdownText: String = defaultTime,
     val countdownFinished: Boolean = false,
-) : UIState
+) : UIState()

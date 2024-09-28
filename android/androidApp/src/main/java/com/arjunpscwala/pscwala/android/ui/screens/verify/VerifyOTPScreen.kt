@@ -6,12 +6,15 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.WindowInsets
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.KeyboardArrowLeft
+import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.ElevatedButton
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -55,7 +58,8 @@ import com.arjunpscwala.pscwala.android.theme.dp_8
 import com.arjunpscwala.pscwala.android.ui.components.AppSnackbarHost
 import com.arjunpscwala.pscwala.android.ui.components.LoadingDialog
 import com.arjunpscwala.pscwala.android.ui.components.ShowError
-import com.arjunpscwala.pscwala.verifyOTP.VerifyOTPViewModel
+import com.arjunpscwala.pscwala.feature.verifyOTP.VerifyOTPViewModel
+import com.arjunpscwala.pscwala.models.SnackbarState
 
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -134,8 +138,20 @@ fun VerifyOTPScreen(
             Spacer(modifier = Modifier.height(dp_16))
             OTPField(onOTPEntered = {
                 localKeyboardController?.hide()
-                verifyOTPViewModel.verifyUser()
             })
+            Spacer(modifier = Modifier.height(dp_16))
+            ElevatedButton(
+                onClick = {
+                    verifyOTPViewModel.verifyUser()
+                },
+                colors = ButtonDefaults.elevatedButtonColors(
+                    containerColor = MaterialTheme.colorScheme.primaryContainer,
+                    contentColor = MaterialTheme.colorScheme.onPrimaryContainer
+                ),
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Text(text = stringResource(id = R.string.action_verify))
+            }
             Spacer(modifier = Modifier.height(dp_16))
             if (verifyOTPUIState.countdownFinished) {
                 TextButton(onClick = {
@@ -151,10 +167,11 @@ fun VerifyOTPScreen(
     ShowError(
         snackbarHostState = snackbarHostState,
         uiState = verifyOTPUIState,
-        errorMessages =
-        verifyOTPUIState.errorMessages, onMessageDismiss = {
-            verifyOTPViewModel.retryVerify(it)
-        }
+        snackBarState = SnackbarState(
+            errorMessages = verifyOTPUIState.errorMessages,
+            onMessageDismiss = {
+                verifyOTPViewModel.retryVerify(it)
+            })
     )
 
 }

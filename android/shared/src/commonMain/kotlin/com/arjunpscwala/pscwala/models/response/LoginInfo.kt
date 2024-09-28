@@ -1,4 +1,4 @@
-package com.arjunpscwala.pscwala.models
+package com.arjunpscwala.pscwala.models.response
 
 import kotlinx.serialization.Serializable
 

@@ -10,61 +10,62 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.KeyboardArrowLeft
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ElevatedButton
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.Icon
-import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Scaffold
+import androidx.compose.material3.SnackbarHostState
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.arjunpscwala.pscwala.android.R
-import com.arjunpscwala.pscwala.android.theme.dp_1
-import com.arjunpscwala.pscwala.android.theme.dp_128
 import com.arjunpscwala.pscwala.android.theme.dp_16
 import com.arjunpscwala.pscwala.android.theme.dp_32
 import com.arjunpscwala.pscwala.android.theme.dp_6
-import com.arjunpscwala.pscwala.android.theme.dp_8
+import com.arjunpscwala.pscwala.android.ui.components.AppSnackbarHost
+import com.arjunpscwala.pscwala.android.ui.components.ShowError
+import com.arjunpscwala.pscwala.feature.profile.Gender
+import com.arjunpscwala.pscwala.feature.profile.ProfileViewModel
+import com.arjunpscwala.pscwala.models.SnackbarState
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun ProfileScreen(onNavigateToHome: () -> Unit) {
-    var gender by remember {
-        mutableIntStateOf(-1)
+fun ProfileScreen(
+    onNavigateToHome: () -> Unit, profileViewModel: ProfileViewModel = viewModel()
+) {
+    val localSoftwareKeyboardController = LocalSoftwareKeyboardController.current
+    val profileUIState by profileViewModel.profileUIState.collectAsState()
+
+    LaunchedEffect(profileUIState) {
+        if (profileUIState.navigateToHome) {
+            onNavigateToHome()
+        }
     }
 
-    var city by remember {
-        mutableStateOf("")
-    }
-    var course by remember {
-        mutableStateOf("")
+    val snackbarHostState by remember {
+        mutableStateOf(SnackbarHostState())
     }
 
-    var address by remember {
-        mutableStateOf("")
-    }
-
-
-    Scaffold(topBar = {
+    Scaffold(snackbarHost = { AppSnackbarHost(hostState = snackbarHostState) }, topBar = {
         TopAppBar(title = { /*TODO*/ }, windowInsets = WindowInsets(
             top = dp_16, left = dp_16
         ), actions = {
@@ -99,8 +100,8 @@ fun ProfileScreen(onNavigateToHome: () -> Unit) {
                     .padding(dp_6)
             ) {
                 Row(verticalAlignment = Alignment.CenterVertically) {
-                    RadioButton(selected = gender == 1, onClick = {
-                        gender = 1
+                    RadioButton(selected = Gender.isMale(profileUIState.gender), onClick = {
+                        profileViewModel.onGenderClick(Gender.MALE.type)
                     })
                     Text(
                         text = stringResource(id = R.string.title_male),
@@ -109,7 +110,9 @@ fun ProfileScreen(onNavigateToHome: () -> Unit) {
 
                 }
                 Row(verticalAlignment = Alignment.CenterVertically) {
-                    RadioButton(selected = gender == 2, onClick = { gender = 2 })
+                    RadioButton(selected = Gender.isFemale(profileUIState.gender), onClick = {
+                        profileViewModel.onGenderClick(Gender.FEMALE.type)
+                    })
                     Text(
                         text = stringResource(id = R.string.title_female),
                         style = MaterialTheme.typography.labelSmall
@@ -119,9 +122,9 @@ fun ProfileScreen(onNavigateToHome: () -> Unit) {
             }
             Spacer(modifier = Modifier.height(dp_16))
             OutlinedTextField(
-                value = city,
+                value = profileUIState.city,
                 onValueChange = {
-                    city = it
+                    profileViewModel.onCityValueChange(it)
                 },
                 label = {
                     Text(text = stringResource(id = R.string.hint_city))
@@ -137,33 +140,15 @@ fun ProfileScreen(onNavigateToHome: () -> Unit) {
             )
             Spacer(modifier = Modifier.height(dp_16))
             OutlinedTextField(
-                value = course,
+                value = profileUIState.course,
                 onValueChange = {
-                    course = it
+                    profileViewModel.onCourseValueChange(it)
                 },
                 label = {
-                    Text(text = stringResource(id = R.string.hint_course))
+                    Text(text = stringResource(id = R.string.hint_course_label))
                 },
                 placeholder = {
                     Text(text = stringResource(id = R.string.hint_course))
-                },
-                modifier = Modifier.fillMaxWidth(),
-                singleLine = true,
-                keyboardOptions = KeyboardOptions(
-                    keyboardType = KeyboardType.Text,
-                ),
-            )
-            Spacer(modifier = Modifier.height(dp_16))
-            OutlinedTextField(
-                value = address,
-                onValueChange = {
-                    address = it
-                },
-                label = {
-                    Text(text = stringResource(id = R.string.hint_address))
-                },
-                placeholder = {
-                    Text(text = stringResource(id = R.string.hint_address))
                 },
                 modifier = Modifier.fillMaxWidth(),
                 singleLine = true,
@@ -173,15 +158,33 @@ fun ProfileScreen(onNavigateToHome: () -> Unit) {
             )
             Spacer(modifier = Modifier.height(dp_16))
             ElevatedButton(
-                onClick = { },
+                onClick = {
+                    localSoftwareKeyboardController?.hide()
+                    profileViewModel.registerProfile()
+                },
                 colors = ButtonDefaults.elevatedButtonColors(
                     containerColor = MaterialTheme.colorScheme.primaryContainer,
                     contentColor = MaterialTheme.colorScheme.onPrimaryContainer
                 ),
                 modifier = Modifier.fillMaxWidth()
             ) {
-                Text(text = stringResource(id = R.string.action_continue))
+                if (profileUIState.isLoading) {
+                    CircularProgressIndicator(color = MaterialTheme.colorScheme.onPrimary)
+                } else {
+                    Text(text = stringResource(id = R.string.action_continue))
+                }
+
             }
         }
+
     }
+
+    ShowError(
+        snackbarHostState = snackbarHostState,
+        uiState = profileUIState,
+        snackBarState = SnackbarState(
+            message = stringResource(R.string.action_ok),
+            errorMessages = profileUIState.errorMessages,
+        )
+    )
 }

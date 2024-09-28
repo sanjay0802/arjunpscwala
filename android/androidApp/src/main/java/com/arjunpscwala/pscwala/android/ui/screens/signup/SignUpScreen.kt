@@ -43,6 +43,7 @@ import com.arjunpscwala.pscwala.android.ui.components.AppSnackbarHost
 import com.arjunpscwala.pscwala.android.ui.components.LoadingDialog
 import com.arjunpscwala.pscwala.android.ui.components.ShowError
 import com.arjunpscwala.pscwala.feature.signup.SignUpViewModel
+import com.arjunpscwala.pscwala.models.SnackbarState
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -179,8 +180,9 @@ fun SignUpScreen(
     ShowError(
         snackbarHostState = snackbarHostState,
         uiState = registerUIState,
-        errorMessages =
-        registerUIState.errorMessages
+        snackBarState = SnackbarState(
+            errorMessages = registerUIState.errorMessages,
+        )
     )
 
 }
