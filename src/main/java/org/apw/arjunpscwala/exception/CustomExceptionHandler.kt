@@ -1,20 +1,18 @@
-package org.apw.arjunpscwala.exception;
+package org.apw.arjunpscwala.exception
 
-import org.apw.arjunpscwala.model.StandardResponse;
-import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.ControllerAdvice;
-import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.apw.arjunpscwala.model.StandardError
+import org.springframework.http.HttpStatus
+import org.springframework.http.ResponseEntity
+import org.springframework.web.bind.annotation.ControllerAdvice
+import org.springframework.web.bind.annotation.ExceptionHandler
 
-//@ControllerAdvice
-public class CustomExceptionHandler {
+@ControllerAdvice
+class CustomExceptionHandler {
 
-
- /*   @ExceptionHandler(value = ApwException.class)
-    public StandardResponse handleCustomerAlreadyExistsException(ApwException ex) {
-
-        System.out.println("This is Custom Exception");
-        String message = ex.getMessage();
-
-    return StandardResponse.failure(message,HttpStatus.BAD_REQUEST.value());
-    }*/
+    @ExceptionHandler(InvalidTokenException::class)
+    fun handleInvalidTokenException(ex: InvalidTokenException): ResponseEntity<StandardError> {
+        return ResponseEntity<StandardError>(
+            StandardError(ex.message ?: "", HttpStatus.BAD_REQUEST.value(), timestamp = java.util.Date()), HttpStatus.BAD_REQUEST
+        )
+    }
 }

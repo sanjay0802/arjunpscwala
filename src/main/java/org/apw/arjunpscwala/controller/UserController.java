@@ -6,6 +6,7 @@ import org.apw.arjunpscwala.entity.User;
 import org.apw.arjunpscwala.exception.ApwException;
 import org.apw.arjunpscwala.model.StandardResponse;
 import org.apw.arjunpscwala.model.UserResponse;
+import org.apw.arjunpscwala.service.JWTService;
 import org.apw.arjunpscwala.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -27,24 +28,28 @@ public class UserController {
 
     @Autowired
     UserService service;
+    @Autowired
+    JWTService jwtService;
 
-    @PostMapping("/verify")
+    @PostMapping("/auth/verify")
     public ResponseEntity<StandardResponse<User>> verifyUser(@RequestBody HashMap<String, String> data) {
         try {
             Long mobileNo = Long.valueOf(data.get("mobileNo"));
             String fbToken = data.get("fbToken");
 
-            log.info("inside verifyUser()"+ " Mobile No."+mobileNo+" Token: "+fbToken);
+            log.info("inside verifyUser()" + " Mobile No." + mobileNo + " Token: " + fbToken);
 
             List<Optional<User>> users = service.verifyUserDetails(mobileNo);
             if (!users.isEmpty()) {
+                User user = users.get(0).get();
+                user.setToken(jwtService.generateToken(user.getUserId()));
 
-                StandardResponse<User> response = StandardResponse.success(users.get(0).get(), "Otp Verified Successfully", HttpStatus.OK.value());
+                StandardResponse<User> response = StandardResponse.success(user, "Otp Verified Successfully", HttpStatus.OK.value());
                 return new ResponseEntity<>(response, HttpStatusCode.valueOf(200));
 
             } else {
 
-                StandardResponse<User> response = StandardResponse.failure(null,"User Does not Exist", HttpStatus.UNAUTHORIZED.value());
+                StandardResponse<User> response = StandardResponse.failure(null, "User Does not Exist", HttpStatus.UNAUTHORIZED.value());
                 return new ResponseEntity<>(response, HttpStatusCode.valueOf(401));
 
             }
@@ -55,17 +60,19 @@ public class UserController {
         return null;
     }
 
-    @PostMapping("/register")
+    @PostMapping("/auth/register")
 
     public ResponseEntity<StandardResponse<User>> registerUser(@RequestBody User user) throws ApwException {
 
         System.out.println("user details" + user.toString());
         Optional<UserResponse> userResponse = service.registerUser(user);
 
-            if (userResponse.get().getMsg().equalsIgnoreCase(USER_REGISTERED_MESSAGE)) {
-                StandardResponse<User> response = StandardResponse.success(userResponse.get().getUser(), "User Has Been Registered Successfully", HttpStatus.CREATED.value());
-                return new ResponseEntity<>(response, HttpStatusCode.valueOf(201));
-            }
+        if (userResponse.get().getMsg().equalsIgnoreCase(USER_REGISTERED_MESSAGE)) {
+            User resultUser = userResponse.get().getUser();
+            resultUser.setToken(jwtService.generateToken(resultUser.getUserId()));
+            StandardResponse<User> response = StandardResponse.success(resultUser, "User Has Been Registered Successfully", HttpStatus.CREATED.value());
+            return new ResponseEntity<>(response, HttpStatusCode.valueOf(201));
+        }
 
         return null;
     }
@@ -73,38 +80,35 @@ public class UserController {
     @PostMapping("/update")
     public ResponseEntity<StandardResponse<User>> updateUserDetail(@RequestBody User user) {
 
-        log.info("inside updateUserDetail(): "+ user);
+        log.info("inside updateUserDetail(): " + user);
 
         int i = service.updateUserDetails(user);
 
-        if(i>0){
+        if (i > 0) {
 
             StandardResponse<User> response = StandardResponse.success(user, "User Details Updated Successfully", HttpStatus.OK.value());
             return new ResponseEntity<>(response, HttpStatusCode.valueOf(200));
 
-        }else{
-            StandardResponse<User> response = StandardResponse.failure(null,"User Does not Exist", HttpStatus.UNAUTHORIZED.value());
+        } else {
+            StandardResponse<User> response = StandardResponse.failure(null, "User Does not Exist", HttpStatus.UNAUTHORIZED.value());
             return new ResponseEntity<>(response, HttpStatusCode.valueOf(401));
 
 
         }
 
 
-
     }
 
 
-
-
     @ExceptionHandler(value = ApwException.class)
-    @ResponseStatus(HttpStatus. BAD_REQUEST)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
     public StandardResponse handleCustomerAlreadyExistsException(ApwException ex) {
 
         System.out.println("This is Custom Exception");
         String message = ex.getMessage();
         User user = ex.user;
 
-        return StandardResponse.failure(user,message,HttpStatus.BAD_REQUEST.value());
+        return StandardResponse.failure(user, message, HttpStatus.BAD_REQUEST.value());
     }
 }
 

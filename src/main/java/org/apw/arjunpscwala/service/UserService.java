@@ -51,6 +51,7 @@ public class UserService {
             }
         } else {
             User newUser = userRepository.save(user);
+
             return Optional.ofNullable(UserResponse.builder()
                     .msg("User Has Been Registered Successfully")
                     .user(newUser)

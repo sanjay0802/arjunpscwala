@@ -4,6 +4,7 @@ plugins {
 	id 'org.springframework.boot' version '3.3.2'
 	id 'io.spring.dependency-management' version '1.1.6'
 	id "io.freefair.lombok" version "8.10"
+	id 'org.jetbrains.kotlin.jvm'
 }
 
 group = 'org.apw'
@@ -29,9 +30,16 @@ dependencies {
 	//implementation("com.google.firebase:firebase-auth")
 	implementation 'org.springframework.boot:spring-boot-starter-data-rest'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	//Spring security
+	implementation "org.springframework.boot:spring-boot-starter-security"
+	//JWT
+	implementation 'com.auth0:java-jwt:4.4.0'
+	//
+	implementation("org.jetbrains.kotlin:kotlin-reflect:2.0.20")
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
 }
 
 tasks.named('test') {

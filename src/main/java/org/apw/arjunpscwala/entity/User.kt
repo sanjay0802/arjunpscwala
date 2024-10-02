@@ -1,31 +1,44 @@
-package org.apw.arjunpscwala.entity;
+package org.apw.arjunpscwala.entity
 
+import jakarta.persistence.Entity
+import jakarta.persistence.GeneratedValue
+import jakarta.persistence.GenerationType
+import jakarta.persistence.Id
+import jakarta.persistence.SequenceGenerator
+import jakarta.persistence.Table
+import lombok.Data
+import lombok.Getter
+import lombok.Setter
+import java.time.LocalDateTime
 
-import jakarta.persistence.*;
-import lombok.*;
-
-import java.time.LocalDateTime;
 
 @Entity
 @Data
 @Table(name = "APW_USER")
 @SequenceGenerator(name = "users_generator", sequenceName = "APW_USER_seq", allocationSize = 1)
-public class User {
-
+class User {
+    @Getter
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "users_generator")
-    private Long userId;
-    private Long mobileNo;
-    private String userName;
-    private String name;
-    private String gender;
-    private String city;
-    private  String course;
-    private LocalDateTime createdAt;
-    private String fbToken;
+    val userId: Long? = null
+    val mobileNo: Long? = null
 
-    @Override
-    public String toString() {
+    @Getter
+    val userName: String? = null
+    val name: String? = null
+    val gender: String? = null
+    val city: String? = null
+    val course: String? = null
+    private val createdAt: LocalDateTime? = null
+    private val fbToken: String? = null
+
+    @Setter
+    @Getter
+    @Transient
+    var token: String? = null
+
+
+    override fun toString(): String {
         return "Users{" +
                 "userId=" + userId +
                 ", mobileNo=" + mobileNo +
@@ -36,6 +49,7 @@ public class User {
                 ", createdAt=" + createdAt +
                 ", ftoken='" + fbToken + '\'' +
                 ", userName='" + fbToken + '\'' +
-                '}';
+                '}'
     }
 }
+
